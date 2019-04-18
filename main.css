@@ -1,0 +1,7 @@
+html, body {
+     background-image: url(images/dawn.jpg);
+     position: fixed; /* Making the page unscrollable */
+     min-width: 630px;
+     min-height: 400px;
+ }
+
