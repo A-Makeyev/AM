@@ -64,19 +64,40 @@ html, body {
     animation: anti-spin 12s infinite linear;
 }
 
-.venus {
+
+/* MORE PROJECTS */
+
+
+.more-projects {
     position: absolute;
     width: 506px;
     z-index: 3;
-    animation: orbitvenus 15s infinite linear;
+    animation: float-more-projects 15s infinite linear;
     top: -19px;
 }
 
-.venus .effect {
-    width:  38px;
-    height: 38px;
-    background-image: url(images/venus.png);
+.more-projects .effect {
+    width:  70px;
+    height: 70px;
+    border: 2px solid rgb(30, 30, 30);
+    border-radius: 50%;
     animation: anti-spin 15s infinite linear;
+}
+
+.more-projects h5 {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.more-projects a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.more-projects a:hover {
+    color: #3000E8;
+    transition: color 1s;
 }
 
 
@@ -150,7 +171,7 @@ html, body {
 }
 
 .github-project-2:hover {
-    color: #3000E8;
+    color: skyblue;
     transition: color 1s;
 }
 
@@ -224,7 +245,7 @@ html, body {
     }
 }
 
-@keyframes orbitvenus {
+@keyframes float-more-projects {
     0% {
         z-index: 3;
         transform: rotateY(0);
