@@ -94,7 +94,9 @@ html, body {
     animation: anti-spin 20s infinite linear;
 }
 
-.mars {
+/* PROJECT 1 >>> Online Code Editor */
+
+.project-2 {
     position: absolute;
     width: 706px;
     z-index: 5;
@@ -102,11 +104,30 @@ html, body {
     top: -11px;
 }
 
-.mars .effect {
-    width: 22px;
-    height: 22px;
-    background-image: url(images/mars.png);
+.project-2 .effect {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
     animation: anti-spin 30s infinite linear;
+}
+
+.project-2 h5 {
+    margin-left: 6px;
+}
+
+.github-project-2 {
+	color: #24292E;
+    text-decoration: none;
+    margin-left: 35px;
+	font-size: 30px;
+    cursor: pointer;
+    outline: 0;
+    
+}
+
+.github-project-2:hover {
+    color: #3000E8;
+    transition: color 1s;
 }
 
 /* PROJECT 1 >>> Online Code Editor */
@@ -115,7 +136,8 @@ html, body {
     position: absolute;
     width: 1100px;
     z-index: 6;
-    animation: orbitjupiter 50s infinite linear;
+    outline: 0;
+    animation: float-project-1 50s infinite linear;
     top: -64px;
 }
 
@@ -130,7 +152,7 @@ html, body {
     margin-left: 10px;
 }
 
-.github {
+.github-project-1 {
 	color: #24292E;
     text-decoration: none;
     margin-left: 55px;
@@ -140,8 +162,8 @@ html, body {
     
 }
 
-.github:hover {
-    color: whitesmoke;
+.github-project-1:hover {
+    color: #2F7C76;
     transition: color 1s;
 }
 
@@ -237,7 +259,7 @@ html, body {
     }
 }
 
-@keyframes orbitjupiter {
+@keyframes float-project-1 {
     0% {
         z-index: 6;
         transform: rotateY(0);
