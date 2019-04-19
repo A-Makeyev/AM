@@ -109,6 +109,8 @@ html, body {
     animation: anti-spin 30s infinite linear;
 }
 
+/* PROJECT 1 >>> Online Code Editor */
+
 .project-1 {
     position: absolute;
     width: 1100px;
@@ -121,18 +123,21 @@ html, body {
     width: 128px;
     height: 128px;
     border-radius: 50%;
-    
     animation: anti-spin 50s infinite linear;
+}
+
+.project-1 h5 {
+    margin-left: 10px;
 }
 
 .github {
 	color: #24292E;
     text-decoration: none;
-    margin-left: 50px;
+    margin-left: 55px;
 	font-size: 30px;
     cursor: pointer;
     outline: 0;
-    animation: anti-spin 50s infinite linear;
+    
 }
 
 .github:hover {
