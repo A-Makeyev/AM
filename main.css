@@ -60,7 +60,7 @@ html, body {
 .mercury .effect {
     width: 15px;
     height: 15px;
-    background-image: url(images/mercury.png);
+    background-image: url(images/project-1.png);
     animation: anti-spin 12s infinite linear;
 }
 
@@ -109,7 +109,7 @@ html, body {
     animation: anti-spin 30s infinite linear;
 }
 
-.jupiter {
+.project-1 {
     position: absolute;
     width: 1100px;
     z-index: 6;
@@ -117,11 +117,27 @@ html, body {
     top: -64px;
 }
 
-.jupiter .effect {
+.project-1 .effect {
     width: 128px;
     height: 128px;
-    background-image: url(images/jupiter.png);
+    border-radius: 50%;
+    
     animation: anti-spin 50s infinite linear;
+}
+
+.github {
+	color: #24292E;
+    text-decoration: none;
+    margin-left: 50px;
+	font-size: 30px;
+    cursor: pointer;
+    outline: 0;
+    animation: anti-spin 50s infinite linear;
+}
+
+.github:hover {
+    color: whitesmoke;
+    transition: color 1s;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Animations ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
