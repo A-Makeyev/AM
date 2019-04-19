@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> &#60;/&#62; Online Code Editor &#60;/&#62; </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/png" href="images/brackets.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="jquery/jquery-3.3.1.min.js"></script>
+	</head>
+		<body>
+			<div id="wrapper">
+					<div id="menuBar">
+						<div id="logo"> &#60; CODE / EDiTOR &#62;</div>
+						<div id="by"> By <a href="https://anatoly.netlify.com" target="_blank"> Makeyka </a></div>
+
+						<div id="runButton">
+						<button id="run"> RUN <span> &#187; </span> </button>
+						</div>
+
+						<ul id="toggle">
+							<li class="toggle">HTML</li>
+							<li class="toggle">CSS</li>
+							<li class="toggle" style="border:none;">JAVASCRIPT</li>
+						</ul>
+					</div>
+				<div class="clear"></div>
+
+				<!------------------------------------ HTML SECTION ------------------------------------>
+
+				<div class="codeContainer" id="HTMLcontainer">
+					<div id="htmlSign" class="codeLabel"><img src="images/html.png" alt="HTML"></div>
+					<textarea id="htmlCode"></textarea>
+				</div>
+
+				<!------------------------------- CSS SECTION -------------------------------------->
+
+				<div class="codeContainer" id="CSScontainer">
+					<div id="cssSign" class="codeLabel"><img src="images/css.png" alt="CSS"></div>
+					<textarea id="cssCode"></textarea>
+				</div>
+
+				<!--------------------------- JS SECTION --------------------------------------->
+
+				<div class="codeContainer" id="JAVASCRIPTcontainer">
+					<div id="jsSign" class="codeLabel"><img src="images/js.png" alt="JS"></div>
+					<textarea id="jsCode"></textarea>
+				</div>
+
+				<!------------------ BROWSER SECTION ------------------>
+
+				<div class="codeContainer" id="BROWSERcontainer">
+					<div id="browser"><img src="images/chrome.png"></div>
+					<iframe id="browserFrame"></iframe>
+				</div>
+			
+			</div> <!-- end of wrapper -->
+
+		<script type="text/javascript" src="script.js"></script>
+	  </body>
+</html>
