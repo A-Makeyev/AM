@@ -23,7 +23,7 @@ html, body {
      text-decoration: none;
      display: inline-block;
      overflow: hidden;
-     height: 220px;
+     height: 250px;
      width: 280px;
      margin: 40px 100px;
      border: 2px solid #48C2EE;
@@ -31,15 +31,32 @@ html, body {
 
 .project-pic {
      width: 100%;
-     height: 180px;
+     height: 220px;
      border-bottom: 2px solid #48C2EE;
 }
 
 .project-title {
      font-weight: bold;
      color: #48C2EE;
-     margin-top: 5px;
+     margin-top: -2px;
 }
+
+/* Source Codes
+
+.project-github {
+     margin-top: 5px;
+     font-weight: bold;
+     color: #C31A02;
+     cursor: pointer;
+     outline: 0;
+}
+
+.project-github:hover {
+     color: #E04202;
+     transition: color 1s;
+}
+
+*/
 
 #github {
      border-radius: 50%;
