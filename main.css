@@ -79,28 +79,52 @@ html, body {
     animation: anti-spin 15s infinite linear;
 }
 
-.earth {
+
+/* ABOUT ME PAGE */
+
+
+.about-me {
     position: absolute;
     width: 610px;
     z-index: 4;
-    animation: orbitearth 20s infinite linear;
+    animation: float-about-me 20s infinite linear;
     top: -20px;
 }
 
-.earth .effect {
+.about-me .effect {
     width: 40px;
     height: 40px;
-    background-image: url(images/earth.png);
-    animation: anti-spin 20s infinite linear;
+    border-radius: 50%;
+    animation: anti-spin 20s infinite linear; 
+}
+
+.about-me h5 {
+    margin-left: 5px;
+}
+
+.github-about-me {
+	color: #24292E;
+    text-decoration: none;
+    margin-left: 16px;
+	font-size: 20px;
+    cursor: pointer;
+    outline: 0;
+    
+}
+
+.github-about-me:hover {
+    color: #CA585A;
+    transition: color 1s;
 }
 
 /* PROJECT 1 >>> Online Code Editor */
+
 
 .project-2 {
     position: absolute;
     width: 706px;
     z-index: 5;
-    animation: orbitmars 30s infinite linear;
+    animation: float-project-2 30s infinite linear;
     top: -11px;
 }
 
@@ -130,7 +154,9 @@ html, body {
     transition: color 1s;
 }
 
+
 /* PROJECT 1 >>> Online Code Editor */
+
 
 .project-1 {
     position: absolute;
@@ -218,7 +244,7 @@ html, body {
     }
 }
 
-@keyframes orbitearth {
+@keyframes float-about-me {
     0% {
         z-index: 4;
         transform: rotateY(0);
@@ -239,7 +265,7 @@ html, body {
 }
 
 
-@keyframes orbitmars {
+@keyframes float-project-2 {
     0% {
         z-index: 5;
         transform: rotateY(0);
@@ -278,8 +304,6 @@ html, body {
         transform: rotateY(360deg);
     }
 }
-
-
 
 @keyframes anti-spin {
     form {
