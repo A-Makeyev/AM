@@ -5,6 +5,10 @@ html, body {
      min-height: 400px;
  }
 
+img {
+    image-rendering: auto;
+}
+
  .wrapper {
     position: relative;
     margin: 0 auto;
@@ -12,7 +16,7 @@ html, body {
     perspective: 1000px;
     perspective-origin: 60% 50%;
     transform: rotate(-10deg);
-    margin-top: 270px;
+    margin-top: 200px;
     left: 36%;
 }
 
@@ -96,7 +100,7 @@ html, body {
 }
 
 .more-projects a:hover {
-    color: #3000E8;
+    color: darkred;
     transition: color 1s;
 }
 
@@ -120,25 +124,10 @@ html, body {
 }
 
 .about-me h5 {
-    margin-left: 5px;
+    margin-left: -5px;
 }
 
-.github-about-me {
-	color: #24292E;
-    text-decoration: none;
-    margin-left: 16px;
-	font-size: 20px;
-    cursor: pointer;
-    outline: 0;
-    
-}
-
-.github-about-me:hover {
-    color: #CA585A;
-    transition: color 1s;
-}
-
-/* PROJECT 1 >>> Online Code Editor */
+/* PROJECT 2 >>> Shape Clicker */
 
 
 .project-2 {
@@ -171,7 +160,7 @@ html, body {
 }
 
 .github-project-2:hover {
-    color: skyblue;
+    color: #CA585A;
     transition: color 1s;
 }
 
