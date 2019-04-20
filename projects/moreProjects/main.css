@@ -10,14 +10,9 @@ html, body {
 }
 
 .work {
-     padding-top: 200px;
+     padding-top: 100px;
      margin-top: -60px;
 } 
-
-.work .work-header {
-     margin-top: 50px;
-     color: #48C2EE;
-}
 
 .project {
      text-decoration: none;
