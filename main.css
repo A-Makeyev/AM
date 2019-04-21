@@ -17,7 +17,7 @@ img {
     perspective-origin: 60% 50%;
     transform: rotate(-10deg);
     margin-top: 200px;
-    left: 36%;
+    left: 33%;
 }
 
 .wrapper > div {
@@ -53,54 +53,39 @@ img {
     animation-iteration-count: infinite;
 }
 
-.mercury {
+
+/* RESUME */
+
+
+.resume {
     position: absolute;
     width: 400px;
     z-index: 2;
-    animation: orbitmercury 12s infinite linear;
+    animation: float-resume 12s infinite linear;
     top: -7.5;
 }
 
-.mercury .effect {
-    width: 15px;
-    height: 15px;
-    background-image: url(images/project-1.png);
+.resume .effect {
+    width:  70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid rgb(30, 30, 30);
     animation: anti-spin 12s infinite linear;
 }
 
-
-/* MORE PROJECTS */
-
-
-.more-projects {
-    position: absolute;
-    width: 506px;
-    z-index: 3;
-    animation: float-more-projects 15s infinite linear;
-    top: -19px;
+.resume h5 {
+    margin-top: 26px;
+    margin-left: 13px;
 }
 
-.more-projects .effect {
-    width:  70px;
-    height: 70px;
-    border: 2px solid rgb(30, 30, 30);
-    border-radius: 50%;
-    animation: anti-spin 15s infinite linear;
-}
-
-.more-projects h5 {
-    margin-top: 20px;
-    margin-left: 15px;
-}
-
-.more-projects a {
+.resume a {
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-.more-projects a:hover {
-    color: darkred;
+.resume a:hover {
+    color: rgb(96, 27, 223);
     transition: color 1s;
 }
 
@@ -126,6 +111,43 @@ img {
 .about-me h5 {
     margin-left: -5px;
 }
+
+
+/* MORE PROJECTS */
+
+
+.more-projects {
+    position: absolute;
+    width: 506px;
+    z-index: 3;
+    animation: float-more-projects 15s infinite linear;
+    top: -19px;
+}
+
+.more-projects .effect {
+    width:  70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid rgb(30, 30, 30);
+    animation: anti-spin 15s infinite linear;
+}
+
+.more-projects h5 {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.more-projects a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.more-projects a:hover {
+    color: darkred;
+    transition: color 1s;
+}
+
 
 /* PROJECT 2 >>> Shape Clicker */
 
@@ -160,7 +182,7 @@ img {
 }
 
 .github-project-2:hover {
-    color: #CA585A;
+    color: #C1460B;
     transition: color 1s;
 }
 
@@ -214,7 +236,7 @@ img {
     }
 }
 
-@keyframes orbitmercury {
+@keyframes float-resume {
     0% {
         z-index: 2;
         transform: rotateY(0);
