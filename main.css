@@ -85,7 +85,7 @@ img {
 }
 
 .resume a:hover {
-    color: rgb(96, 27, 223);
+    color: #00AEEF;
     transition: color 1s;
 }
 
