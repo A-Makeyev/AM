@@ -345,3 +345,55 @@ img {
         transform: rotateY(-360deg);
     }
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+@media only screen and (min-width: 320px) and (max-width: 360px) { /* SMALL MOBILE PHONES 320 + */
+
+} /* End of @media min-width 320px */
+
+
+@media only screen and (min-width: 360px) and (max-width: 375px) { /* MOBILE PHONES 360 + */
+
+} /* End of @media min-width 360px */
+
+
+@media only screen and (min-width: 375px) and (max-width: 411px) { /* MOBILE PHONES 375 + */
+
+} /* End of @media min-width 375px */
+
+
+@media only screen and (min-width: 411px) and (max-width: 768px) { /* MOBILE PHONES 411 + */
+
+} /* End of @media min-width 411px */
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) { /* SMALL TABLETS 768 + */
+
+} /* End of @media min-width 768px */
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) { /* TABLETS 1024 + */
+
+} /* End of @media min-width 1024px */
+
+
+@media only screen and (min-width: 1280px) and (max-width: 1440px) { /* SMALL LAPTOPS 1280 + */
+
+} /* End of @media min-width 1280px */
+
+
+@media only screen and (min-width: 1440px) and (max-width: 1820px) { /* LAPTOPS 1440 + */
+
+} /* End of @media min-width 1440px */
+
+
+@media only screen and (min-width: 1820px) and (max-width: 2200px) { /* DESKTOPS 1820 + */
+
+} /* End of @media min-width 1820px */
+
+
+@media only screen and (min-width: 2200px) { /* SCREENS 2200 + */
+
+} /* End of @media min-width 2200px */
