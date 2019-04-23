@@ -27,22 +27,34 @@ img {
     height: 0;
 }
 
-.main-logo {
-    width: 250px;
+.main-title {
+    width: 300px;
     position: absolute;
     top: 0;
     z-index: 1;
     height: 125px !important;
 }
 
-.main-logo .logo {
+.main-title .title {
     width: 250px;
-    height: 250px;
-    background: url(images/M.png) no-repeat;
-    background-size: cover;
+    height: 350px;
     border-radius: 250px;
     margin: 0 auto;
-    animation: spin-logo 40s infinite linear;
+
+}
+
+#mainTitle {
+    position: absolute;
+    top: 170px;
+    left: 50px;
+}
+
+#mainTitle p {
+    margin-top: -20px;
+    margin-left: 3px;
+    color: rgb(0, 136, 146);
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .effect {
@@ -85,7 +97,7 @@ img {
 }
 
 .resume a:hover {
-    color: #00AEEF;
+    color: rgb(5, 134, 180);
     transition: color 1s;
 }
 
@@ -102,16 +114,34 @@ img {
 }
 
 .about-me .effect {
-    width: 40px;
-    height: 40px;
+    width: 160px;
+    height: 120px;
     border-radius: 50%;
     animation: anti-spin 20s infinite linear; 
 }
 
 .about-me h5 {
-    margin-left: -5px;
+    margin-top: 1px;
+    margin-left: 35px;
 }
 
+.about-me a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-me a:hover {
+    color: #5920EF;
+    transition: color 1s;
+}
+
+#about-image {
+    animation: spin-about-image 45s infinite;
+}
+
+#color {
+    color: #5920EF;
+}
 
 /* MORE PROJECTS */
 
@@ -182,7 +212,7 @@ img {
 }
 
 .github-project-2:hover {
-    color: #C1460B;
+    color: rgb(177, 70, 20);
     transition: color 1s;
 }
 
@@ -227,9 +257,9 @@ img {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Animations ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-@keyframes spin-logo {
+@keyframes spin-about-image {
     0% {
-        transform: rotate(0);
+        transform: rotate(360deg);
     }
     100% {
         transform: rotate(-360deg);
