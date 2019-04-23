@@ -17,6 +17,30 @@ $(document).ready(function () {
 		});
 
 
+		// Fade in elements
+
+		$(function() {
+			$("#fade-in-hi").delay(3000).fadeIn();
+		});
+
+		$(function() {
+			$("#fade-in-anatoly").delay(5000).fadeIn();
+		});
+
+		$(function() {
+			$("#fade-in-dev").delay(7000).fadeIn();
+		});
+
+		$(function() {
+			$("#fade-in-projects-title").delay(10000).fadeIn();
+		});
+
+
+
+
+
+
+
 
 
 });

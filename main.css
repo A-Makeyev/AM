@@ -265,6 +265,26 @@ img {
     transition: color 1s;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Hidden elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#fade-in-hi {
+    display: none;
+}
+
+#fade-in-anatoly {
+    display: none;
+}
+
+#fade-in-dev {
+    display: none;
+}
+
+#fade-in-projects-title {
+    display: none;
+}
+
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Animations ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 @keyframes spin-about-image {
