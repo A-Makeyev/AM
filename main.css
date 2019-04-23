@@ -1,5 +1,6 @@
 html, body {
      background-image: url(images/dawn.jpg);
+     font-family: -apple-system, Roboto, Oxygen, sans-serif;
      position: fixed; /* Making the page unscrollable */
      min-width: 630px;
      min-height: 400px;
@@ -28,7 +29,7 @@ img {
 }
 
 .main-title {
-    width: 300px;
+    width: 350px;
     position: absolute;
     top: 0;
     z-index: 1;
@@ -36,7 +37,7 @@ img {
 }
 
 .main-title .title {
-    width: 250px;
+    width: 350px;
     height: 350px;
     border-radius: 250px;
     margin: 0 auto;
@@ -54,6 +55,12 @@ img {
     margin-left: 3px;
     color: rgb(0, 136, 146);
     font-size: 1em;
+    font-weight: bold;
+}
+
+#mainTitle h3 {
+    margin-top: 30px;
+    margin-left: -30px;
     font-weight: bold;
 }
 
@@ -86,8 +93,8 @@ img {
 }
 
 .resume h5 {
-    margin-top: 26px;
-    margin-left: 13px;
+    margin-top: 27px;
+    margin-left: 9px;
 }
 
 .resume a {
@@ -164,7 +171,7 @@ img {
 
 .more-projects h5 {
     margin-top: 20px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .more-projects a {
@@ -178,6 +185,9 @@ img {
     transition: color 1s;
 }
 
+#more {
+    margin-left: 10px;
+}
 
 /* PROJECT 2 >>> Shape Clicker */
 
