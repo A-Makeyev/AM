@@ -30,7 +30,7 @@ $(document).ready(function () {
 
 			$("#fade-in-about").delay(13000).fadeIn();
 			$("#fade-in-more-projects").delay(17000).fadeIn();
-			$("#fade-in-resume").delay(18000).fadeIn();
+			$("#fade-in-resume").delay(19000).fadeIn();
 		});
 
 
