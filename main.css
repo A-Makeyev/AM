@@ -559,7 +559,7 @@ img {
 
 @media only screen and (min-width: 360px) and (max-width: 375px) { /* MOBILE PHONES 360 + */
     html, body {
-        min-height: 630px;
+        min-height: 650px;
         position: fixed;
         overflow-y: scroll;     
     }
