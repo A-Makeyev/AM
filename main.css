@@ -444,6 +444,10 @@ img {
 
 @media only screen and (min-width: 320px) and (max-width: 360px) { /* SMALL MOBILE PHONES 320 + */
     html, body {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
         min-height: 550px;
         position: fixed;
         overflow-y: scroll;     
@@ -459,33 +463,33 @@ img {
     }
     .project-2 .effect {
         margin-top: 220px;
-        margin-left: 295px;
+        margin-left: 220px;
         animation: none;
     }
     .project-2 h5 {
         margin-top: 10px;
-        margin-left: 297px;
+        margin-left: 220px;
     }
     .github-project-2 {
-        margin-left: 325px;
+        margin-left: 250px;
     }
     /* PROJECT 1 >>> Online Code Editor */
     .project-1 {
         animation: none;
     }
     .project-1 .effect {
-        width: 95px;
-        height: 95px;
-        margin-top: 250px;
-        margin-left: 489px;
+        width: 90px;
+        height: 90px;
+        margin-top: 52px;
+        margin-left: 550px;
         animation: none;
     }
     .project-1 h5 {
-        margin-top: 10px;
-        margin-left: 478px;
+        margin-top: 11px;
+        margin-left: 535px;
     }
     .github-project-1 {
-        margin-left: 524px; 
+        margin-left: 580px; 
     } 
     /* MORE PROJECTS */
     .more-projects {
@@ -496,8 +500,8 @@ img {
     }
     .more-projects .effect {
         position: absolute;
-        margin-top: 760px;
-        margin-left: -5px;
+        margin-top: 530px;
+        margin-left: -15px;
         width:  100px;
         height: 40px;
         border-radius: 0px;
@@ -523,14 +527,14 @@ img {
         position: absolute;
         width: 160px;
         height: 120px;
-        margin-top: 620px;
-        margin-left: 213px;
+        margin-top: 410px;
+        margin-left: 205px;
         animation: none;
     }
     .about-me h5 {
         position: absolute;
-        margin-top: 750px;
-        margin-left: 243px;
+        margin-top: 530px;
+        margin-left: 233px;
     }
     #about-image {
         animation: none;
@@ -542,8 +546,8 @@ img {
     }
     .resume .effect {
         position: absolute;
-        margin-top: 760px;
-        margin-left: 155px;
+        margin-top: 525px;
+        margin-left: 145px;
         width: 70px;
         height: 70px;
         border: none;
@@ -559,6 +563,10 @@ img {
 
 @media only screen and (min-width: 360px) and (max-width: 375px) { /* MOBILE PHONES 360 + */
     html, body {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
         min-height: 650px;
         position: fixed;
         overflow-y: scroll;     
@@ -674,6 +682,10 @@ img {
 
 @media only screen and (min-width: 375px) and (max-width: 411px) { /* MOBILE PHONES 375 + */
     html, body {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
         min-height: 650px;
         position: fixed;
         overflow-y: scroll;     
@@ -789,6 +801,10 @@ img {
 
 @media only screen and (min-width: 411px) and (max-width: 768px) { /* MOBILE PHONES 411 + */
     html, body {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
         min-height: 740px;
         position: fixed;
         overflow-y: scroll;     
@@ -904,6 +920,10 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) { /* SMALL TABLETS 768 + */
     html, body {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
         min-height: 1450px;
         position: fixed;
         overflow-y: scroll;     
