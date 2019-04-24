@@ -434,6 +434,8 @@ img {
 @media only screen and (min-width: 320px) and (max-width: 360px) { /* SMALL MOBILE PHONES 320 + */
     html, body {
         min-width: 320px;
+        min-height: 1000px;
+        overflow-y: auto;
     }
     .wrapper {
         transform: rotate(0deg);
@@ -442,8 +444,6 @@ img {
     }
     /* PROJECT 2 >>> Shape Clicker */
     .project-2 {
-        margin-top: 250px;
-        margin-left: 155px;
         animation: none;
     }
     .project-2 .effect {
@@ -458,26 +458,24 @@ img {
     .github-project-2 {
         margin-left: 320px;
     }
-    /* PROJECT 1 >>> Online Code Editor 
+    /* PROJECT 1 >>> Online Code Editor */
     .project-1 {
         animation: none;
     }
     .project-1 .effect {
+        width: 95px;
+        height: 95px;
         margin-top: 250px;
-        margin-left: 355px;
+        margin-left: 483px;
         animation: none;
     }
     .project-1 h5 {
-        margin-top: 250px;
-        margin-left: 255px;
-        animation: none;
+        margin-top: 10px;
+        margin-left: 473px;
     }
-    
     .github-project-1 {
-        margin-top: 250px;
-        margin-left: 255px;
-        animation: none;  
-    } */
+        margin-left: 517px; 
+    } 
 } /* End of @media min-width 320px */
 
 
