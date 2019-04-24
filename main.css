@@ -100,16 +100,18 @@ img {
 .resume h5 {
     margin-top: 29px;
     margin-left: 9px;
+    outline: 0;
 }
 
 .resume a {
     text-decoration: none;
     font-weight: bold;
     color: black;
+    outline: 0;
 }
 
 .resume a:hover {
-    color: rgb(5, 134, 180);
+    color: rgb(34, 183, 238);
     transition: color 1s;
 }
 
@@ -135,11 +137,13 @@ img {
 .about-me h5 {
     margin-top: 1px;
     margin-left: 35px;
+    outline: 0;
 }
 
 .about-me a {
     text-decoration: none;
     color: black;
+    outline: 0;
 }
 
 .about-me a:hover {
@@ -177,12 +181,14 @@ img {
 .more-projects h5 {
     margin-top: 20.5px;
     margin-left: 9px;
+    outline: 0;
 }
 
 .more-projects a {
     text-decoration: none;
     font-weight: bold;
     color: black;
+    outline: 0;
 }
 
 .more-projects a:hover {
@@ -203,6 +209,7 @@ img {
     z-index: 5;
     animation: float-project-2 30s infinite linear;
     top: -11px;
+    outline: 0;
 }
 
 .project-2 .effect {
@@ -210,10 +217,12 @@ img {
     height: 90px;
     border-radius: 50%;
     animation: anti-spin 30s infinite linear;
+    outline: 0;
 }
 
 .project-2 h5 {
     margin-left: 6px;
+    outline: 0;
 }
 
 .github-project-2 {
@@ -223,7 +232,6 @@ img {
 	font-size: 30px;
     cursor: pointer;
     outline: 0;
-    
 }
 
 .github-project-2:hover {
@@ -249,10 +257,12 @@ img {
     height: 128px;
     border-radius: 50%;
     animation: anti-spin 50s infinite linear;
+    outline: 0;
 }
 
 .project-1 h5 {
     margin-left: 10px;
+    outline: 0;
 }
 
 .github-project-1 {
@@ -435,9 +445,8 @@ img {
     html, body {
         min-width: 320px;
         min-height: 570px;
-        position: absolute;
-        overflow-y: scroll;
-        overflow-x: hidden;
+        position: fixed;
+        overflow-y: scroll;     
     }
     .wrapper {
         transform: rotate(0deg);
@@ -488,9 +497,10 @@ img {
     .more-projects .effect {
         position: absolute;
         margin-top: 760px;
-        margin-left: -10px;
-        width:  110px;
-        height: 110px;
+        margin-left: -5px;
+        width:  100px;
+        height: 40px;
+        border-radius: 0px;
         border: none;
         animation: none;
     }
@@ -532,7 +542,7 @@ img {
     }
     .resume .effect {
         position: absolute;
-        margin-top: 765px;
+        margin-top: 760px;
         margin-left: 155px;
         width: 70px;
         height: 70px;
