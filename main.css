@@ -434,12 +434,14 @@ img {
 @media only screen and (min-width: 320px) and (max-width: 360px) { /* SMALL MOBILE PHONES 320 + */
     html, body {
         min-width: 320px;
-        min-height: 1000px;
-        overflow-y: auto;
+        min-height: 570px;
+        position: absolute;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
     .wrapper {
         transform: rotate(0deg);
-        margin-top: -170px;
+        margin-top: -190px;
         left: -35%;
     }
     /* PROJECT 2 >>> Shape Clicker */
@@ -448,15 +450,15 @@ img {
     }
     .project-2 .effect {
         margin-top: 220px;
-        margin-left: 290px;
+        margin-left: 295px;
         animation: none;
     }
     .project-2 h5 {
         margin-top: 10px;
-        margin-left: 290px;
+        margin-left: 297px;
     }
     .github-project-2 {
-        margin-left: 320px;
+        margin-left: 325px;
     }
     /* PROJECT 1 >>> Online Code Editor */
     .project-1 {
@@ -466,16 +468,82 @@ img {
         width: 95px;
         height: 95px;
         margin-top: 250px;
-        margin-left: 483px;
+        margin-left: 489px;
         animation: none;
     }
     .project-1 h5 {
         margin-top: 10px;
-        margin-left: 473px;
+        margin-left: 478px;
     }
     .github-project-1 {
-        margin-left: 517px; 
+        margin-left: 524px; 
     } 
+    /* MORE PROJECTS */
+    .more-projects {
+        margin-top: 100px;
+        width:  110px;
+        height: 110px;
+        animation: none;
+    }
+    .more-projects .effect {
+        position: absolute;
+        margin-top: 760px;
+        margin-left: -10px;
+        width:  110px;
+        height: 110px;
+        border: none;
+        animation: none;
+    }
+    .more-projects h5 {
+        margin-top: 20%;
+        margin-left: 50%;
+        animation: none;
+    }
+    #more {
+        margin-top: -20px;
+        margin-left: -43px;
+    }
+    /* ABOUT ME PAGE */
+    .about-me {
+        position: absolute;
+        width: 610px;
+        animation: none;
+    }
+    .about-me .effect {
+        position: absolute;
+        width: 160px;
+        height: 120px;
+        margin-top: 620px;
+        margin-left: 213px;
+        animation: none;
+    }
+    .about-me h5 {
+        position: absolute;
+        margin-top: 750px;
+        margin-left: 243px;
+    }
+    #about-image {
+        animation: none;
+    }
+    /* RESUME */
+    .resume {
+        position: absolute;
+        animation: none;
+    }
+    .resume .effect {
+        position: absolute;
+        margin-top: 765px;
+        margin-left: 155px;
+        width: 70px;
+        height: 70px;
+        border: none;
+        animation: none;
+    }
+    .resume h5 {
+        position: absolute;
+        margin-top: 29px;
+        margin-left: 9px;
+    }
 } /* End of @media min-width 320px */
 
 
