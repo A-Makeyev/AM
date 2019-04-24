@@ -26,7 +26,7 @@ $(document).ready(function () {
 			$("#fade-in-projects-title").delay(5500).fadeIn();
 
 			$("#fade-in-project-2").delay(7000).animate({ opacity: 1 }, 3500);
-			$("#fade-in-project-1").delay(9000).animate({ opacity: 1}, 3500);
+			$("#fade-in-project-1").delay(9000).animate({ opacity: 1 }, 3500);
 
 			$("#fade-in-more-projects").delay(13000).fadeIn();
 			$("#fade-in-resume").delay(15000).fadeIn();
