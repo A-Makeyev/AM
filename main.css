@@ -1,5 +1,10 @@
 html, body {
      background-image: url(images/dawn.jpg);
+     /* Making background image the same on all resolutions */
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-attachment: fixed;
+     background-size: cover;
      font-family: -apple-system, Roboto, Oxygen, sans-serif;
      position: fixed; /* Making the page unscrollable */
      min-width: 630px;

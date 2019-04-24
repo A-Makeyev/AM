@@ -1,5 +1,10 @@
 html {
     background: url("images/blue.jpg");
+    /* Making background image the same on all resolutions */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     overflow: hidden;
 }

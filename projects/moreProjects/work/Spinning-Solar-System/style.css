@@ -1,6 +1,11 @@
 
 html {
     background-image: url(images/milky.jpg);
+    /* Making background image the same on all resolutions */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     position: fixed; /* Making the page unscrollable */
     min-width: 630px;
     min-height: 400px;
