@@ -20,27 +20,18 @@ $(document).ready(function () {
 		// Fade in elements
 
 		$(function() {
-			$("#fade-in-hi").delay(3000).fadeIn();
+			$("#fade-in-hi").delay(1000).fadeIn();
+			$("#fade-in-anatoly").delay(2000).fadeIn();
+			$("#fade-in-dev").delay(3500).fadeIn();
+			$("#fade-in-projects-title").delay(5500).fadeIn();
+
+			$("#fade-in-project-2").delay(7000).animate({ opacity: 1 }, 3500);
+			$("#fade-in-project-1").delay(9000).animate({ opacity: 1}, 3500);
+
+			$("#fade-in-more-projects").delay(13000).fadeIn();
+			$("#fade-in-resume").delay(15000).fadeIn();
+			$("#fade-in-about").delay(17000).fadeIn();
 		});
-
-		$(function() {
-			$("#fade-in-anatoly").delay(5000).fadeIn();
-		});
-
-		$(function() {
-			$("#fade-in-dev").delay(7000).fadeIn();
-		});
-
-		$(function() {
-			$("#fade-in-projects-title").delay(10000).fadeIn();
-		});
-
-
-
-
-
-
-
 
 
 });
