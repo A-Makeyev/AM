@@ -29,8 +29,8 @@ $(document).ready(function () {
 			$("#fade-in-project-1").delay(9000).animate({ opacity: 1 }, 3500);
 
 			$("#fade-in-about").delay(13000).fadeIn();
-			$("#fade-in-more-projects").delay(17000).fadeIn();
-			$("#fade-in-resume").delay(19000).fadeIn();
+			$("#fade-in-more-projects").delay(15000).fadeIn();
+			$("#fade-in-resume").delay(16000).fadeIn();
 		});
 
 
