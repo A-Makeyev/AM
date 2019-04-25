@@ -1,11 +1,6 @@
 	
 	body {
 		 background-image: url("images/soft-color.png");
-		 /* Making background image the same on all resolutions */
-		 background-repeat: no-repeat;
-		 background-position: center center;
-		 background-attachment: fixed;
-		 background-size: cover;
 	   font-family: Verdana, Geneva, sans-serif;
 	   flex-direction: column;
 	   align-items: center;
