@@ -20,23 +20,45 @@ html, body {
      border-radius: 5px;
    }
 
-#save-btn {
+#save-pdf {
      position: relative;
      background-color: whitesmoke;
      padding: 5px;
      width: 140px;
      top: 1%;
-     left: 36%;
+     left: 25%;
      border: 2px solid #00AEEF;
      border-radius: 5px;
 }
 
-#save-btn:hover {
+#save-pdf:hover {
      background-color: #00AEEF;
      transition: background-color 1s;
 }
 
-a {
+#save-pdf a {
+     color: rgb(30, 30, 30);
+     text-decoration: none;
+     font-weight: bold;
+}
+
+#save-docx {
+     position: relative;
+     background-color: whitesmoke;
+     padding: 5px;
+     width: 140px;
+     top: -4.1%;
+     left: 50%;
+     border: 2px solid #00AEEF;
+     border-radius: 5px;
+}
+
+#save-docx:hover {
+     background-color: #00AEEF;
+     transition: background-color 1s;
+}
+
+#save-docx a {
      color: rgb(30, 30, 30);
      text-decoration: none;
      font-weight: bold;
@@ -53,11 +75,18 @@ a {
           height: 300px;
           padding: 0;
      }
-     #save-btn {
+     #save-pdf {
           padding: 5px;
           width: 90px;
           top: 5%;
-          left: 34%;
+          left: 16%;
+          font-size: 0.7em;
+     }
+     #save-docx {
+          padding: 5px;
+          width: 90px;
+          top: -4.1%;
+          left: 52%;
           font-size: 0.7em;
      }
 } /* End of @media min-width 320px */
@@ -71,11 +100,18 @@ a {
           height: 330px;
           padding: 0;
      }
-     #save-btn {
+     #save-pdf {
           padding: 5px;
           width: 90px;
           top: 5%;
-          left: 34%;
+          left: 18%;
+          font-size: 0.7em;
+     }
+     #save-docx {
+          padding: 5px;
+          width: 90px;
+          top: -3%;
+          left: 51%;
           font-size: 0.7em;
      }
 } /* End of @media min-width 360px */
@@ -89,11 +125,18 @@ a {
           height: 330px;
           padding: 0;
      }
-     #save-btn {
+     #save-pdf {
           padding: 5px;
           width: 90px;
           top: 5%;
-          left: 34%;
+          left: 17%;
+          font-size: 0.7em;
+     }
+     #save-docx {
+          padding: 5px;
+          width: 90px;
+          top: -3.1%;
+          left: 50%;
           font-size: 0.7em;
      }
 } /* End of @media min-width 375px */
@@ -107,11 +150,18 @@ a {
           height: 330px;
           padding: 0;
      }
-     #save-btn {
+     #save-pdf {
           padding: 5px;
           width: 90px;
           top: 5%;
-          left: 34%;
+          left: 18%;
+          font-size: 0.7em;
+     }
+     #save-docx {
+          padding: 5px;
+          width: 90px;
+          top: -3.2%;
+          left: 51%;
           font-size: 0.7em;
      }
 } /* End of @media min-width 411px */
@@ -125,11 +175,18 @@ a {
           height: 550px;
           padding: 0;
      }
-     #save-btn {
+     #save-pdf {
           padding: 5px;
           width: 140px;
           top: 5%;
-          left: 34%;
+          left: 21%;
+          font-size: 1em;
+     }
+     #save-docx {
+          padding: 5px;
+          width: 140px;
+          top: -1%;
+          left: 51%;
           font-size: 1em;
      }
 } /* End of @media min-width 768px */
@@ -137,17 +194,24 @@ a {
 
 @media only screen and (min-width: 1024px) and (max-width: 1280px) { /* TABLETS 1024 + */
      #container {
-          left: 13%;
+          left: 26%;
           margin-top: 5%;
           width: 550px;
           height: 550px;
           padding: 0;
      }
-     #save-btn {
+     #save-pdf {
           padding: 5px;
           width: 130px;
           top: 5%;
-          left: 34%;
+          left: 22%;
+          font-size: 1em;
+     }
+     #save-docx {
+          padding: 5px;
+          width: 130px;
+          top: -0.9%;
+          left: 49%;
           font-size: 1em;
      }
 } /* End of @media min-width 1024px */
@@ -161,11 +225,18 @@ a {
           height: 500px;
           padding: 0;
      }
-     #save-btn {
+     #save-pdf {
           padding: 5px;
           width: 130px;
           top: 2%;
-          left: 34%;
+          left: 20%;
+          font-size: 1em;
+     }
+     #save-docx {
+          padding: 5px;
+          width: 130px;
+          top: -4.6%;
+          left: 50%;
           font-size: 1em;
      }
 } /* End of @media min-width 1280px */
@@ -179,11 +250,18 @@ a {
           height: 600px;
           padding: 0;
      }
-     #save-btn {
+     #save-pdf {
           padding: 5px;
           width: 100px;
           top: 1%;
-          left: 39%;
+          left: 30%;
+          font-size: 0.8em;
+     }
+     #save-docx {
+          padding: 5px;
+          width: 100px;
+          top: -3.9%;
+          left: 50%;
           font-size: 0.8em;
      }
 } /* End of @media min-width 1440px */
