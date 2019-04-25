@@ -25,7 +25,7 @@ html, body {
      background-color: whitesmoke;
      padding: 5px;
      width: 140px;
-     top: 2%;
+     top: 1%;
      left: 36%;
      border: 2px solid #00AEEF;
      border-radius: 5px;
@@ -48,7 +48,7 @@ a {
 @media only screen and (min-width: 320px) and (max-width: 360px) { /* SMALL MOBILE PHONES 320 + */
      #container {
           left: 0;
-          margin-top: 15%;
+          margin-top: 10%;
           width: 300px;
           height: 300px;
           padding: 0;
@@ -56,7 +56,7 @@ a {
      #save-btn {
           padding: 5px;
           width: 90px;
-          top: 10%;
+          top: 5%;
           left: 34%;
           font-size: 0.7em;
      }
@@ -66,7 +66,7 @@ a {
 @media only screen and (min-width: 360px) and (max-width: 375px) { /* MOBILE PHONES 360 + */
      #container {
           left: 2%;
-          margin-top: 15%;
+          margin-top: 10%;
           width: 330px;
           height: 330px;
           padding: 0;
@@ -74,7 +74,7 @@ a {
      #save-btn {
           padding: 5px;
           width: 90px;
-          top: 10%;
+          top: 5%;
           left: 34%;
           font-size: 0.7em;
      }
@@ -92,7 +92,7 @@ a {
      #save-btn {
           padding: 5px;
           width: 90px;
-          top: 10%;
+          top: 5%;
           left: 34%;
           font-size: 0.7em;
      }
@@ -110,7 +110,7 @@ a {
      #save-btn {
           padding: 5px;
           width: 90px;
-          top: 10%;
+          top: 5%;
           left: 34%;
           font-size: 0.7em;
      }
@@ -128,7 +128,7 @@ a {
      #save-btn {
           padding: 5px;
           width: 140px;
-          top: 10%;
+          top: 5%;
           left: 34%;
           font-size: 1em;
      }
@@ -146,7 +146,7 @@ a {
      #save-btn {
           padding: 5px;
           width: 130px;
-          top: 10%;
+          top: 5%;
           left: 34%;
           font-size: 1em;
      }
@@ -164,7 +164,7 @@ a {
      #save-btn {
           padding: 5px;
           width: 130px;
-          top: 5%;
+          top: 2%;
           left: 34%;
           font-size: 1em;
      }
@@ -174,7 +174,7 @@ a {
 @media only screen and (min-width: 1440px) and (max-width: 1820px) { /* LAPTOPS 1440 + */
      #container {
           left: 27%;
-          margin-top: 2%;
+          margin-top: 1%;
           width: 600px;
           height: 600px;
           padding: 0;
