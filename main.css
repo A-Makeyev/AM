@@ -223,7 +223,12 @@ img {
 
 .project-2 h5 {
     margin-left: 6px;
+    width: 300px;
     outline: 0;
+}
+
+#project-2-div {
+    width: 0;
 }
 
 .github-project-2 {
@@ -263,7 +268,12 @@ img {
 
 .project-1 h5 {
     margin-left: 10px;
+    width: 300px;
     outline: 0;
+}
+
+#project-1-div {
+    width: 0;
 }
 
 .github-project-1 {
@@ -486,7 +496,7 @@ img {
     }
     .github-project-1 {
         margin-left: 580px; 
-    } 
+    }
     /* MORE PROJECTS */
     .more-projects {
         margin-top: 100px;
