@@ -227,7 +227,7 @@ img {
 }
 
 .github-project-2 {
-	color: #24292E;
+    color: #24292E;
     text-decoration: none;
     margin-left: 35px;
 	font-size: 30px;
@@ -442,7 +442,7 @@ img {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
-@media only screen and (min-width: 320px) and (max-width: 360px) { /* SMALL MOBILE PHONES 320 + */
+@media only screen and (min-width: 0px) and (max-width: 360px) { /* SMALL MOBILE PHONES */
     html {
         min-height: 550px;
         position: fixed;
@@ -506,7 +506,7 @@ img {
     }
     .more-projects h5 {
         margin-top: 20%;
-        margin-left: 50%;
+        margin-left: 51%;
         animation: none;
     }
     #more {
@@ -530,7 +530,7 @@ img {
     .about-me h5 {
         position: absolute;
         margin-top: 530px;
-        margin-left: 233px;
+        margin-left: 235px;
     }
     #about-image {
         animation: none;
@@ -552,9 +552,9 @@ img {
     .resume h5 {
         position: absolute;
         margin-top: 29px;
-        margin-left: 9px;
+        margin-left: 13px;
     }
-} /* End of @media min-width 320px */
+} /* End of @media min-width 0px */
 
 
 @media only screen and (min-width: 360px) and (max-width: 375px) { /* MOBILE PHONES 360 + */
