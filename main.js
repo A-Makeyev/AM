@@ -34,4 +34,67 @@ $(document).ready(function () {
 		});
 
 
+		// Letters of the name changing upon hovering
+
+		// #2E00E6 => Purple
+		// #337F77 => Green
+		// #0039CC => Blue
+
+		// A
+		$("#capital-a").on("mouseover", function() {
+			$(this).css("color", "#2E00E6"); // #2E00E6 => Purple
+			$("#capital-a").on("mouseleave", function() {
+				$(this).css("color", "black");
+			});
+		});
+
+				// n
+				$("#n").on("mouseover", function() {
+					$(this).css("color", "#337F77"); // #337F77 => Green
+					$("#n").on("mouseleave", function() {
+						$(this).css("color", "black");
+					});
+				});
+
+						// a
+		$("#a").on("mouseover", function() {
+			$(this).css("color", "#0039CC"); // #0039CC => Blue
+			$("#a").on("mouseleave", function() {
+				$(this).css("color", "black");
+			});
+		});
+
+				// t
+				$("#t").on("mouseover", function() {
+					$(this).css("color", "#2E00E6"); // #2E00E6 => Purple
+					$("#t").on("mouseleave", function() {
+						$(this).css("color", "black");
+					});
+				});
+
+						// o
+		$("#o").on("mouseover", function() {
+			$(this).css("color", "#337F77"); // #337F77 => Green
+			$("#o").on("mouseleave", function() {
+				$(this).css("color", "black");
+			});
+		});
+
+				// l
+				$("#l").on("mouseover", function() {
+					$(this).css("color", "#0039CC"); // #0039CC => Blue
+					$("#l").on("mouseleave", function() {
+						$(this).css("color", "black");
+					});
+				});
+
+						// y
+		$("#y").on("mouseover", function() {
+			$(this).css("color", "#2E00E6"); // #2E00E6 => Purple
+			$("#y").on("mouseleave", function() {
+				$(this).css("color", "black");
+			});
+		});
+
+
 });
