@@ -1,4 +1,4 @@
-html, body {
+html {
      background-image: url(images/dawn.jpg);
      /* Making background image the same on all resolutions */
      background-repeat: no-repeat;
@@ -112,7 +112,7 @@ img {
 }
 
 .resume a:hover {
-    color: rgb(34, 183, 238);
+    color: rgb(12, 102, 134);
     transition: color 1s;
 }
 
@@ -443,11 +443,7 @@ img {
 
 
 @media only screen and (min-width: 320px) and (max-width: 360px) { /* SMALL MOBILE PHONES 320 + */
-    html, body {
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
+    html {
         min-height: 550px;
         position: fixed;
         overflow-y: scroll;     
@@ -562,11 +558,7 @@ img {
 
 
 @media only screen and (min-width: 360px) and (max-width: 375px) { /* MOBILE PHONES 360 + */
-    html, body {
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
+    html {
         min-height: 550px;
         position: fixed;
         overflow-y: scroll;     
@@ -681,11 +673,7 @@ img {
 
 
 @media only screen and (min-width: 375px) and (max-width: 411px) { /* MOBILE PHONES 375 + */
-    html, body {
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
+    html {
         min-height: 550px;
         position: fixed;
         overflow-y: scroll;     
@@ -800,11 +788,7 @@ img {
 
 
 @media only screen and (min-width: 411px) and (max-width: 768px) { /* MOBILE PHONES 411 + */
-    html, body {
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
+    html {
         min-height: 550px;
         position: fixed;
         overflow-y: scroll;     
@@ -919,11 +903,7 @@ img {
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) { /* SMALL TABLETS 768 + */
-    html, body {
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
+    html {
         min-height: 1450px;
         position: fixed;
         overflow-y: scroll;     
