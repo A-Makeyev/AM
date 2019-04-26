@@ -36,13 +36,13 @@ $(document).ready(function () {
 
 		// Letters of the name changing upon hovering
 
-		// #2E00E6 => Purple
+		// #9823EB => Purple
 		// #337F77 => Green
 		// #0039CC => Blue
 
 		// A
 		$("#capital-a").on("mouseover", function() {
-			$(this).css("color", "#2E00E6"); // #2E00E6 => Purple
+			$(this).css("color", "#9823EB"); // #2E00E6 => Purple
 			$("#capital-a").on("mouseleave", function() {
 				$(this).css("color", "black");
 			});
@@ -66,7 +66,7 @@ $(document).ready(function () {
 
 				// t
 				$("#t").on("mouseover", function() {
-					$(this).css("color", "#2E00E6"); // #2E00E6 => Purple
+					$(this).css("color", "#9823EB"); // #2E00E6 => Purple
 					$("#t").on("mouseleave", function() {
 						$(this).css("color", "black");
 					});
@@ -90,7 +90,7 @@ $(document).ready(function () {
 
 						// y
 		$("#y").on("mouseover", function() {
-			$(this).css("color", "#2E00E6"); // #2E00E6 => Purple
+			$(this).css("color", "#9823EB"); // #2E00E6 => Purple
 			$("#y").on("mouseleave", function() {
 				$(this).css("color", "black");
 			});
