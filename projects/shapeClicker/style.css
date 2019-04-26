@@ -12,8 +12,8 @@
 		display: flex;
 		flex-direction: column;
 		margin: auto;
-    		position: absolute;
-    		top: 30%;
+  	position: absolute;
+    top: 30%;
 	}
 
 	p {
@@ -65,13 +65,13 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~ BOX 4 ~~~~~~~~~~~~~~~~~~~~~~ */
 
 	#box4 {
-           margin-top: 5%;
+       margin-top: 5%;
   	   width: 50px;
    	   height: 50px;
-    	   position: absolute;
-    	   animation-name: color-4;
-    	   animation-duration: 2s;
-    	   animation-iteration-count: infinite;
+    	 position: absolute;
+    	 animation-name: color-4;
+    	 animation-duration: 2s;
+    	 animation-iteration-count: infinite;
 	}
 
 /* ~~~~~~~~ Color Changer ~~~~~~~~*/
@@ -149,3 +149,31 @@
   }
 
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px) { /* MOBILE PHONES */
+	.box-container {
+		width: 300px;
+    top: 20%;
+	}
+	p {
+		margin-left: -5%;
+		margin-top: 1%;
+	  font-size: 1em;
+	}
+} /* End of @media min-width 0px */
+
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) { /* SMALL TABLETS 768 + */
+	.box-container {
+		width: 700px;
+    top: 20%;
+	}
+	p {
+		margin-left: -5%;
+		margin-top: 1%;
+	  font-size: 1.5em;
+	}
+} /* End of @media min-width 768px */
