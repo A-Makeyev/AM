@@ -13,11 +13,11 @@
 		flex-direction: column;
 		margin: auto;
 		position: fixed;
-    top: 40%;
+    top: 25%;
 	}
 
 	p {
-	  font-size: 1.5em;
+	  font-size: 1.2em;
 	  font-weight: bold;
 	}
 
@@ -154,14 +154,20 @@
 
 
 @media only screen and (min-width: 0px) and (max-width: 768px) { /* MOBILE PHONES */
+	body {
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+ 	}	
 	.box-container {
 		width: 300px;
-    top: 30%;
+		top: 20%;
+		left: -20%;
 	}
 	p {
 		margin-left: -2%;
 		margin-top: 1%;
-	  font-size: 1em;
+	  font-size: 0.6em;
 	}
 } /* End of @media min-width 0px */
 
