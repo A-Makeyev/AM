@@ -171,8 +171,8 @@ html, body {
      #container {
           left: 13%;
           margin-top: 1%;
-          width: 550px;
-          height: 600px;
+          width: 650px;
+          height: 700px;
           padding: 0;
      }
      .image {
@@ -182,14 +182,14 @@ html, body {
           padding: 5px;
           width: 140px;
           top: 0.5%;
-          left: 21%;
+          left: 24%;
           font-size: 1em;
      }
      #save-docx {
           padding: 5px;
           width: 140px;
-          top: -4.9%;
-          left: 51%;
+          top: -4.1%;
+          left: 49%;
           font-size: 1em;
      }
 } /* End of @media min-width 768px */
@@ -199,8 +199,8 @@ html, body {
      #container {
           left: 26%;
           margin-top: 1%;
-          width: 550px;
-          height: 800px;
+          width: 650px;
+          height: 900px;
           padding: 0;
      }
      .image {
@@ -210,13 +210,13 @@ html, body {
           padding: 5px;
           width: 130px;
           top: 1%;
-          left: 22%;
+          left: 26%;
           font-size: 1em;
      }
      #save-docx {
           padding: 5px;
           width: 130px;
-          top: -3.1%;
+          top: -2.6%;
           left: 49%;
           font-size: 1em;
      }
@@ -227,15 +227,18 @@ html, body {
      #container {
           left: 30%;
           margin-top: 1%;
-          width: 500px;
-          height: 600px;
+          width: 650px;
+          height: 650px;
           padding: 0;
+     }
+     .image {
+          height: 120%;
      }
      #save-pdf {
           padding: 5px;
           width: 130px;
-          top: 1%;
-          left: 20%;
+          top: 0.6%;
+          left: 27%;
           font-size: 1em;
      }
      #save-docx {
@@ -252,8 +255,8 @@ html, body {
      #container {
           left: 29%;
           margin-top: 1%;
-          width: 600px;
-          height: 600px;
+          width: 700px;
+          height: 720px;
           padding: 0;
      }
      .image {
@@ -262,15 +265,15 @@ html, body {
      #save-pdf {
           padding: 5px;
           width: 100px;
-          top: 1%;
-          left: 30%;
+          top: 0.8%;
+          left: 31%;
           font-size: 0.8em;
      }
      #save-docx {
           padding: 5px;
           width: 100px;
-          top: -3.9%;
-          left: 50%;
+          top: -3.3%;
+          left: 48%;
           font-size: 0.8em;
      }
 } /* End of @media min-width 1440px */
