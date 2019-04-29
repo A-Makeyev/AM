@@ -436,6 +436,10 @@ html {
 }
 
 @media screen and (max-width: 810px) {
+    html {
+        min-height: 950px;
+        position: fixed;     
+    }
     .wrapper {
         position: relative;
         margin: 0 auto;
@@ -457,9 +461,9 @@ html {
 
 @media screen and (max-width: 770px) {
     html {
-		background-attachment: fixed;
-		background-position: 44% 15%;
- 	}
+        min-height: 850px;
+        position: fixed;     
+    }
     .mars {
         position: absolute;
         width: 506px;
@@ -477,6 +481,10 @@ html {
 }
 
 @media screen and (max-width: 650px) {
+    html {
+        min-height: 750px;
+        position: fixed;     
+    }
     .earth {
         position: absolute;
         width: 510px;
@@ -487,6 +495,10 @@ html {
 }
 
 @media screen and (max-width: 630px) {
+    html {
+        min-height: 650px;
+        position: fixed;     
+    }
     .wrapper {
         position: relative;
         margin: 0 auto;
