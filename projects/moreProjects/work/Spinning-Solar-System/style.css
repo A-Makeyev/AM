@@ -446,9 +446,6 @@ html {
         margin-top: 270px;
         left: 1%;
     }
-}
-
-@media screen and (max-width: 810px) {
     .mars {
         position: absolute;
         width: 606px;
@@ -458,7 +455,11 @@ html {
     }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 770px) {
+    html {
+		background-attachment: fixed;
+		background-position: 44% 15%;
+ 	}
     .mars {
         position: absolute;
         width: 506px;
