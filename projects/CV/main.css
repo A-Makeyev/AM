@@ -3,6 +3,7 @@ html, body {
      font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
      text-align: center;
      min-width: 260px;
+     min-height: 90vh;
 }
 
 #container {
@@ -168,6 +169,9 @@ html, body {
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) { /* SMALL TABLETS 768 + */
+     body, html {
+          min-height: 115vh;
+     }
      #container {
           left: 13%;
           margin-top: 1%;
@@ -224,6 +228,9 @@ html, body {
 
 
 @media only screen and (min-width: 1280px) and (max-width: 1440px) { /* SMALL LAPTOPS 1280 + */
+     body, html {
+          min-height: 115vh;
+     }
      #container {
           left: 30%;
           margin-top: 1%;
@@ -252,6 +259,9 @@ html, body {
 
 
 @media only screen and (min-width: 1440px) and (max-width: 1820px) { /* LAPTOPS 1440 + */
+     body, html {
+          min-height: 112vh;
+     }
      #container {
           left: 29%;
           margin-top: 1%;
