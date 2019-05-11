@@ -3,11 +3,12 @@ html, body {
      font-family: 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
      text-align: center;
      min-width: 260px;
-     min-height: 90vh;
+     min-height: 100vh;
 }
 
 #container {
      position: relative;
+     margin-top: 2%;
      left: 32%;
      width: 650px;
      height: 650px;
@@ -174,7 +175,7 @@ html, body {
      }
      #container {
           left: 13%;
-          margin-top: 1%;
+          margin-top: 2%;
           width: 650px;
           height: 700px;
           padding: 0;
@@ -202,7 +203,7 @@ html, body {
 @media only screen and (min-width: 1024px) and (max-width: 1280px) { /* TABLETS 1024 + */
      #container {
           left: 26%;
-          margin-top: 1%;
+          margin-top: 2%;
           width: 650px;
           height: 900px;
           padding: 0;
@@ -233,7 +234,7 @@ html, body {
      }
      #container {
           left: 30%;
-          margin-top: 1%;
+          margin-top: 2%;
           width: 650px;
           height: 650px;
           padding: 0;
@@ -264,7 +265,7 @@ html, body {
      }
      #container {
           left: 29%;
-          margin-top: 1%;
+          margin-top: 2%;
           width: 700px;
           height: 720px;
           padding: 0;
