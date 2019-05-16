@@ -11,9 +11,9 @@ $(document).ready(function () {
 			$("#fade-in-project-2").delay(6000).animate({ opacity: 1 }, 3500);
 			$("#fade-in-project-1").delay(8000).animate({ opacity: 1 }, 3500);
 
-			$("#fade-in-about").delay(13000).fadeIn();
+			$("#fade-in-about").delay(12500).fadeIn();
 			$("#fade-in-more-projects").delay(15500).fadeIn();
-			$("#fade-in-resume").delay(17000).fadeIn();
+			$("#fade-in-resume").delay(17500).fadeIn();
 		});
 
 
