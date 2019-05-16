@@ -1,7 +1,22 @@
 $(document).ready(function () {
 
-		// Fade in elements
+	// Fade in elements
+	
+	if ($(window).width() < 1024) {
+		$(function() {
+			$("#fade-in-hi").delay(1000).fadeIn();
+			$("#fade-in-anatoly").delay(2000).fadeIn();
+			$("#fade-in-dev").delay(3000).fadeIn();
+			$("#fade-in-projects-title").delay(4000).fadeIn();
 
+			$("#fade-in-project-2").delay(5000).animate({ opacity: 1 }, 500);
+			$("#fade-in-project-1").delay(6000).animate({ opacity: 1 }, 500);
+
+			$("#fade-in-about").delay(7500).fadeIn();
+			$("#fade-in-more-projects").delay(8000).fadeIn();
+			$("#fade-in-resume").delay(8500).fadeIn();
+		}); 
+	} else {
 		$(function() {
 			$("#fade-in-hi").delay(1000).fadeIn();
 			$("#fade-in-anatoly").delay(2000).fadeIn();
@@ -15,6 +30,7 @@ $(document).ready(function () {
 			$("#fade-in-more-projects").delay(15500).fadeIn();
 			$("#fade-in-resume").delay(17500).fadeIn();
 		});
+	}
 
 
 		// Letters of the name changing upon hovering
@@ -78,6 +94,5 @@ $(document).ready(function () {
 				$(this).css("color", "black");
 			});
 		});
-
 
 });
