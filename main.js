@@ -5,15 +5,15 @@ $(document).ready(function () {
 		$(function() {
 			$("#fade-in-hi").delay(1000).fadeIn();
 			$("#fade-in-anatoly").delay(2000).fadeIn();
-			$("#fade-in-dev").delay(3500).fadeIn();
-			$("#fade-in-projects-title").delay(5500).fadeIn();
+			$("#fade-in-dev").delay(3000).fadeIn();
+			$("#fade-in-projects-title").delay(4500).fadeIn();
 
-			$("#fade-in-project-2").delay(7000).animate({ opacity: 1 }, 3500);
-			$("#fade-in-project-1").delay(9000).animate({ opacity: 1 }, 3500);
+			$("#fade-in-project-2").delay(6000).animate({ opacity: 1 }, 3500);
+			$("#fade-in-project-1").delay(8000).animate({ opacity: 1 }, 3500);
 
 			$("#fade-in-about").delay(13000).fadeIn();
-			$("#fade-in-resume").delay(16500).fadeIn();
-			$("#fade-in-more-projects").delay(17500).fadeIn();
+			$("#fade-in-more-projects").delay(15500).fadeIn();
+			$("#fade-in-resume").delay(17000).fadeIn();
 		});
 
 
