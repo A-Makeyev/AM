@@ -106,18 +106,22 @@ li {
 
 .github:hover {
 	color: #24292E;
+	transition: color 1s;
 }
 
 .linkedin:hover {
 	color: #0077B5;
+	transition: color 1s;
 }
 
 .facebook:hover {
 	color: #4267B2;
+	transition: color 1s;
 }
 
 .mail:hover {
 	color: rgb(233, 10, 10);
+	transition: color 1s;
 }
 
 /* ~~~~~~~~~~ Floating Animation ~~~~~~~~~~~~ */

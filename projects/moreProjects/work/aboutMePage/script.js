@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 			// Change page title on blur
 			$(window).blur(function() {
-				$("title").text("Come back!");
+				$("title").text("About Me");
 			});
 
 			// Change page title back on focus
@@ -17,9 +17,10 @@ $(document).ready(function() {
 		});
 
 
-		$("#mail").click(function()  {
-			alert("anatoly.makeyev@gmail.com");
-		});
-
+		document.getElementById("main-pic").onclick=function() {
+			setTimeout(function() {
+				window.open("https://anatoly-portfolio.netlify.com");
+			}, 1000);
+		}
 
  });
