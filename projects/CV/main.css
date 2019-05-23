@@ -15,12 +15,20 @@ html, body {
      padding: 0;
 }
 
-.image {
-     width: 100%;
-     height: auto;
-     border: 2px solid #00AEEF;
-     border-radius: 5px;
-   }
+/* Resume field */
+
+#resume-field {
+     background: whitesmoke;
+     color: rgb(30, 30, 30);
+     border: 1.5px solid #00AEEF;
+     border-radius: 4px;
+}
+
+h2 {
+     margin-right: 50%;
+}
+
+/* Buttons */
 
 #save-pdf {
      position: relative;
@@ -180,9 +188,6 @@ html, body {
           height: 700px;
           padding: 0;
      }
-     .image {
-          height: 110%;
-     }
      #save-pdf {
           padding: 5px;
           width: 140px;
@@ -208,9 +213,6 @@ html, body {
           height: 900px;
           padding: 0;
      }
-     .image {
-          height: 80%;
-        }
      #save-pdf {
           padding: 5px;
           width: 130px;
@@ -238,9 +240,6 @@ html, body {
           width: 650px;
           height: 650px;
           padding: 0;
-     }
-     .image {
-          height: 120%;
      }
      #save-pdf {
           padding: 5px;
@@ -270,9 +269,6 @@ html, body {
           height: 720px;
           padding: 0;
      }
-     .image {
-          height: 110%;
-        }
      #save-pdf {
           padding: 5px;
           width: 100px;
