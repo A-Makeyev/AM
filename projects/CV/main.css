@@ -24,8 +24,29 @@ html, body {
      border-radius: 4px;
 }
 
-h2 {
+#resume-field h2 {
      margin-right: 50%;
+}
+
+#resume-field p {
+     font-weight: 500;
+     color: rgb(30, 30, 30);
+}
+
+#personal-info {
+     text-align: start;
+     margin-left: 45px;
+     line-height: 25px;
+}
+
+#personal-info a {
+     text-decoration: none;
+     color: rgb(8, 50, 141); 
+}
+
+#personal-info a:hover {
+     color: rgb(0, 80, 252); 
+     transition: color 1s;
 }
 
 /* Buttons */
