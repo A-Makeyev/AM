@@ -15,6 +15,14 @@ img {
     image-rendering: auto;
 }
 
+h1, h3, h5, p {
+    cursor: default;
+}
+
+#about-contact-link {
+    cursor: pointer;
+}
+
  .wrapper {
     position: relative;
     margin: 0 auto;
