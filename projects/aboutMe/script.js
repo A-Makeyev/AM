@@ -17,11 +17,11 @@ $(document).ready(function() {
 	});
 
 	
-	document.getElementById("main-pic").onclick=function() {
-		setTimeout(function() {
-			window.open("https://makeyka.github.io/AM/");
-		}, 1000);
-	}
+// 	document.getElementById("main-pic").onclick=function() {
+// 		setTimeout(function() {
+// 			window.open("https://makeyka.github.io/AM/");
+// 		}, 1000);
+// 	}
 
 
 });
