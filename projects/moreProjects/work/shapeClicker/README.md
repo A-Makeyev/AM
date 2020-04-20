@@ -3,7 +3,7 @@
 
 A reaction game that lets the user click on shapes, measures the reaction time for each click, <br> unlocks messages when the shapes clicked count reaches a certain amount
 
->>> [PLAY](https://makeyka.github.io/shapeClicker/) 
+>>> [PLAY](https://shape-clicker.netlify.app/) 
 
 ## What I've learned by making it 
 
