@@ -1,6 +1,6 @@
 # Sign up page 
 
->>> [Sign Up Now!](https://makeyka.github.io/SignUpPage/) 
+>>> [Sign Up Now!](https://sign-up-page.netlify.app/) 
 
 ## What I've learned by making it
 
