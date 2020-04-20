@@ -1,7 +1,7 @@
 # Online Code Editor
 An online code editor that lets the user type and execute HTML, CSS and JavaScript code snippets
 
->>> [Type some code](https://makeyka.github.io/onlineCodeEditor/)
+>>> [Type some code](https://online-code-editor.netlify.app/)
 <br><br>
 >>> [See it in action](https://www.youtube.com/watch?v=4h_TKh89qQs&feature=youtu.be)
 <br><br>
