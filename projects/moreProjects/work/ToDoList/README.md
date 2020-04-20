@@ -1,6 +1,6 @@
 # To Do List
 
->>> [Plan Your Day!](https://makeyka.github.io/ToDoList/)
+>>> [Plan Your Day!](https://list-do-to.netlify.app/)
 
 
 ## What I've learned by making it
