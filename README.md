@@ -1,1 +1,1 @@
->>> ## My cringy first portfolio [website](anatoly-makeyev.netlify.app)
+>>> ## [My cringy first portfolio website](anatoly-makeyev.netlify.app)
