@@ -1,6 +1,6 @@
 # About Me Page
 
->>> [PREVIEW](https://makeyka.github.io/aboutMePage/)
+>>> [PREVIEW](https://anatoly.netlify.app/)
 
 ## What I've learned by making it
 
