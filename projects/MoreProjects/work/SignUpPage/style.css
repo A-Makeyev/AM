@@ -1,0 +1,546 @@
+html {
+    background: url("images/blue.jpg");
+    /* Making background image the same on all resolutions */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+input, button:focus {
+	outline: 0;
+}
+
+#center {
+	margin: 0 auto;
+	position: fixed;
+	float: center;
+	text-align: center;
+	top: 5%;
+	left: 35.5%;
+	width: 500px;
+	height: 670px;
+}
+
+#email, #phone, #user, #username, #password, #confirm_password {
+	padding: 5px;
+}
+
+#email {
+	position: relative;
+	top: 15%;
+}
+
+#enterEmail {
+	font-size: 2em;
+	color: white;
+	font-family: italic, sans-serif;
+}
+
+#user {
+	position: relative;
+	top: 10%;
+}
+
+#bold {
+	margin-right: 10px;
+	margin-top: 15px;
+	font-size: 2em;
+	color: white;
+	font-family: italic, sans-serif;
+}
+
+p {
+	margin-right: 5px;
+	font-size: 2em;
+	color: white;
+	font-family: italic, sans-serif;
+}
+
+#password {
+	position: relative;
+	float: center;
+	top: 20%;
+}
+
+#confirm_password {
+	position: relative;
+	float: center;
+	top: 20%;
+}
+
+#movePassword {
+	position: relative;
+	float: center;
+	top: 20%;
+	left: 3%;
+	margin-right: 30px;
+}
+
+input {
+	border: 2px solid #009FFD;
+	background-color: #e8ecf7;
+	border-radius: 5px;
+	font-size: 1.2em;
+	font-family: italic, sans-serif;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+/* Sign that appears next to confirm password */
+
+#msg { 
+	top: 97%;
+	left: 79%;
+	font-size: 1.5em;
+	font-weight: bold;
+	position: absolute;
+}
+
+/* Error message that appears on top of the form */
+
+#error { 
+	position: absolute;
+	top: -40px;
+	left: 16.5%;
+	color: red;
+	font-size: 1.3em;
+	font-family: italic, sans-serif;
+	font-weight: bold;
+}
+
+/* Error triangle that appears on top of the form */
+
+#triangle {
+	position: absolute;
+	top: -100px;
+	left: 226px;
+	align-items: center;
+	font-size: 3em;
+	color: red;
+	font-weight: bold;
+}
+
+#submit {
+	position: absolute;
+	right: 10%;
+	top: 16%;
+	width: 120px;
+	color: #4e5463;	
+	background-color: #e8ecf7;
+	cursor: pointer;
+}
+
+/* ~~~~~~~ Changing submit background color based on passwords ~~~~~~~ */
+
+form.valid #msg:before {
+    content: '\2714';
+    color: greenyellow; /* Confirm password sign */
+}
+form.invalid #msg:before {
+    content: '\0026A0';
+    color: red; /* Confirm password sign */
+}
+form.valid #submit:hover {
+    background-color: greenyellow; /* Sign up button background color */
+    color: #423d3d;
+    border-radius: 10px;
+}
+
+
+/* ~~~~~~~ Submit button animation ~~~~~~~ */
+
+.position {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 15%;
+}
+
+#workarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1a3e;
+  font-family: Raleway;
+}
+
+
+/*
+    This is the outer svg wrapper that the SVG itself will 
+    fill. Multiple svg-wrapper classes can be put side by side.
+*/
+
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px
+}
+
+/*
+  This is where we define the fill, color, thickness,
+  and stroke pattern of the SVG when there is no hover.
+  The dasharray and offset together define the line position
+  under the words. Here's also where the transition speed is set.
+*/
+
+#shape {
+  stroke-width: 0px;
+  fill: transparent;
+  stroke: #009FFD;
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 2s all ease;
+}
+
+/* 
+    Pushing the text up into the SVG. Without this the
+    text would be below the div's.
+*/
+
+#text {
+  margin-top: -35px;
+  text-align: center;
+}
+
+/* 
+    Changing the shape on hover. I change the color of the stroke,
+make it thinner, then set it to again wrap around the entire parent element.
+*/
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #06D6A0;
+}
+
+/* ~~~~~~~ End of submit button animation ~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+@media only screen and (min-width: 320px) and (max-width: 360px) { /* SMALL MOBILE PHONES 320 + */
+
+	html {
+		font-size: 8px;
+	}
+	
+	#center {
+		top: 11%;
+		left: -27%;
+	}
+
+	#msg { 
+		top: 54%;
+		left: 66%;
+	}
+
+	#triangle {
+		top: -9%;
+		left: 48%;
+		font-size: 19px;
+	}
+
+	#error { 
+		top: -4%;
+		left: 32%;
+	}
+
+	.svg-wrapper {
+		height: 65px;
+	   }
+
+} /* End of @media max-width 320px */
+
+
+@media only screen and (min-width: 360px) and (max-width: 375px) { /* MOBILE PHONES 360 + */
+
+	html {
+		font-size: 9px;
+	}
+	
+	#center {
+		top: 7%;
+		left: -20%;
+	}
+
+	#msg { 
+		top: 60.5%;
+		left: 67%;
+	}
+
+	#triangle {
+		top: -6%;
+		left: 48.5%;
+		font-size: 16px;
+	}
+
+	#error { 
+		top: -3%;
+		left: 33.5%;
+		font-size: 10px;
+	}
+
+	.svg-wrapper {
+		height: 65px;
+	   }
+
+} /* End of @media min-width 360px */
+
+
+@media only screen and (min-width: 375px) and (max-width: 411px) { /* MOBILE PHONES 375 + */
+
+	html {
+		font-size: 9px;
+	}
+	
+	#center {
+		top: 10%;
+		left: -16%;
+	}
+
+	#msg { 
+		top: 59.5%;
+		left: 66%;
+	}
+
+	#triangle {
+		top: -10%;
+		left: 48%;
+		font-size: 20px;
+	}
+
+	#error { 
+		top: -5.5%;
+		left: 30%;
+		font-size: 12px;
+	}
+
+	.svg-wrapper {
+		height: 65px;
+	   }
+
+} /* End of @media min-width 375px */
+
+
+@media only screen and (min-width: 411px) and (max-width: 768px) { /* MOBILE PHONES 411 + */
+
+	html {
+		font-size: 10px;
+	}
+	
+	#center {
+		top: 8%;
+		left: -10%;
+	}
+
+	#msg { 
+		top: 65.5%;
+		left: 68.5%;
+	}
+
+	#triangle {
+		top: -8.5%;
+		left: 48%;
+		font-size: 20px;
+	}
+
+	#error { 
+		top: -4%;
+		left: 29.5%;
+		font-size: 12px;
+	}
+
+	.svg-wrapper {
+		height: 55px;
+	   }
+
+} /* End of @media min-width 411px */
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) { /* SMALL TABLETS 768 + */
+
+	html {
+		font-size: 13px;
+	}
+	
+	#center {
+		top: 12%;
+		left: 18%;
+	}
+
+	#msg { 
+		top: 82.5%;
+		left: 73%;
+	}
+
+	#triangle {
+		top: -12%;
+		left: 47.5%;
+		font-size: 27px;
+	}
+
+	#error { 
+		top: -6%;
+		left: 25%;
+		font-size: 15px;
+	}
+
+	.svg-wrapper {
+		height: 50px;
+	   }
+
+} /* End of @media min-width 768px */
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) { /* TABLETS 1024 + */
+
+	html {
+		font-size: 14px;
+	}
+	
+	#center {
+		top: 15%;
+		left: 26%;
+	}
+
+	#msg { 
+		top: 87.5%;
+		left: 74%;
+	}
+
+	#triangle {
+		top: -15%;
+		left: 46%;
+	}
+
+	#error { 
+		top: -6%;
+		left: 25%;
+		font-size: 15px;
+	}
+
+	.svg-wrapper {
+		height: 20px;
+	   }
+
+	#submit {
+		width: 130px;
+		height: 33px;
+		top: 15%;
+		left: 6.5%;
+	}
+
+} /* End of @media min-width 1024px */
+
+
+@media only screen and (min-width: 1280px) and (max-width: 1440px) { /* SMALL LAPTOPS 1280 + */
+
+	html {
+		font-size: 12px;
+	}
+	
+	#center {
+		top: 10%;
+		left: 31%;
+	}
+
+	#msg { 
+		top: 76.2%;
+		left: 71%;
+	}
+
+	#triangle {
+		top: -12%;
+		left: 46.5%;
+		font-size: 35px;
+	}
+
+	#error { 
+		top: -5%;
+		left: 25%;
+		font-size: 15px;
+	}
+
+	.svg-wrapper {
+		height: 18px;
+	   }
+
+} /* End of @media min-width 1280px */
+
+
+@media only screen and (min-width: 1440px) and (max-width: 1820px) { /* LAPTOPS 1440 + */
+
+	html {
+		font-size: 13px;
+	}
+	
+	#center {
+		top: 11%;
+		left: 31%;
+	}
+
+	#msg { 
+		top: 82.5%;
+		left: 73%;
+	}
+
+	#triangle {
+		top: -13.5%;
+		left: 46.5%;
+		font-size: 37px;
+	}
+
+	#error { 
+		top: -6%;
+		left: 21%;
+		font-size: 17px;
+	}
+
+	.svg-wrapper {
+		height: 40px;
+	   }
+
+} /* End of @media min-width 1440px */
+
+
+@media only screen and (min-width: 1820px) and (max-width: 2200px) { /* DESKTOPS 1820 + */
+
+	html {
+		font-size: 16px;
+	}
+	
+	#center {
+		top: 12%;
+		left: 35%;
+	}
+
+	#msg { 
+		top: 98%;
+		left: 78%;
+	}
+
+	#triangle {
+		top: -16%;
+		left: 46.5%;
+		font-size: 43px;
+	}
+
+	#error { 
+		top: -6%;
+		left: 20%;
+		font-size: 18px;
+	}
+
+	.svg-wrapper {
+		height: 35px;
+	   }
+
+} /* End of @media min-width 1820px */

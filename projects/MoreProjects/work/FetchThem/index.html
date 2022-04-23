@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fetch 'Em</title>
+        <link rel="icon" type="image/png" href="favicon.jpg">
+        <style>
+            html {
+                height: 100%;
+                background-image: linear-gradient(10deg, #93a5cf, #e4efe9);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+                flex-direction: column;
+                align-items: center;
+                display: flex;
+            }
+            .main {
+                display: flex;
+                margin-left: 70px;
+            }
+            .container {
+                float: left;
+                width: 630px;
+                height: 700px;
+                padding: 100px;
+                margin: 10px 0 0 -100px;
+                text-align: center;
+            }
+            .btn {
+                padding: 5px;
+                margin: -60px 0 40px 5px;
+                font-weight: 600;
+                text-transform: uppercase;
+                background: #35cae4;
+                transition: background 250ms;
+                border: 2px solid rgb(31, 31, 31);
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            input {
+                font-weight: 600;
+                background: #35CAE4;
+                border: 2px solid rgb(31, 31, 31);
+                border-radius: 5px;
+            }
+            .btn:hover {
+                background: #38D5F1;
+            }
+            .loader {
+                width: 400px;
+                height: 300px;
+            }
+            .hide {
+                display: none;
+            }
+            .user-container,
+            .poke-container {
+                display: inline-flex;
+                font-weight: 600;
+                animation: fadeIn 1.5s;
+            }
+            .user-box {
+                margin: 5px;
+                font-size: 18px;
+                padding-bottom: 20px;
+                text-transform: capitalize;
+                background-image: linear-gradient(#a3bded, #6991c7);
+                border: 2px solid rgb(31, 31, 31);
+                border-radius: 5px;
+            }
+            .user-box:hover {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                transition: all 0.5s ease-in-out;
+            }
+            .user-box a {
+                color: hsl(240, 76%, 40%);
+            }
+            .user-box a:hover {
+                color: blue;
+            }
+            .poke-box {
+                margin: 5px;
+                padding: 5px;
+                text-transform: capitalize;
+                background-image: linear-gradient(#6991c7, #a3bded);
+                border: 2px solid rgb(31, 31, 31);
+                border-radius: 5px;
+                transition: background 500ms;
+            }
+            .poke-box:hover {
+                background: skyblue;
+            }
+            a {
+                color: rgb(31, 31, 31);
+                text-decoration: none;
+            }
+            #icon {
+                font-size: 25px;
+                position: absolute;
+                left: 47.7%;
+            }
+            #icon:hover {
+                font-size: 28px;
+                transition: all 0.5s ease;
+            }
+            #phone, #email, #site {
+                color: rgb(13, 13, 13);
+            }
+            #phone:hover, #email:hover, #site:hover {
+                color: rgb(31, 31, 31);
+            }
+            @keyframes fadeIn {
+                from { 
+                    opacity: 0;
+                } to { 
+                    opacity: 1; 
+                }
+            }
+            @media only screen and (min-width: 4320px) {
+                .main {
+                    display: block;
+                }
+                p, a {
+                    overflow-wrap: break-word;
+                }
+                .user-box {
+                    height: 310px;
+                }
+            }
+            @media only screen and (max-width: 1440px) {
+                html {
+                    height: 150%;
+                }
+                .main {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                #icon {
+                    left: 46%;
+                }
+            }
+            @media only screen and (max-width: 800px) {
+                #icon {
+                    left: 43%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div style="text-align: center;">
+                <a href="/fetch.html" target="_blank" id="icon">( ❛ ͜ʖ ❛ )</a>
+            </div>
+            <!-- Users -->
+            <div class="container">
+                <div id="get-users" class="btn">
+                    <span>display</span>
+                    <input type="number" value="10" min="1" max="10" id="number-of-users" style="width: 35px;">
+                    <span>users</span>
+                </div>
+                <div id="user-list"></div>
+            </div>
+            <!-- Pokemons -->
+            <div class="container">
+                <div id="get-pokemons" class="btn">
+                    <span>display</span>
+                    <input type="number" min="1" max="20" id="number-of-pokemons" style="width: 35px;">
+                    <span>pokemons</span>
+                </div>
+                <div id="pokemon-list"></div>
+            </div>
+        </div>
+        <script>
+            /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Users ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+            document.getElementById('get-users').addEventListener('click', () => {
+                let limit = document.getElementById('number-of-users').value
+                fetch(`https://jsonplaceholder.typicode.com/users?_limit=${limit}`)
+                .then(res => res.json())
+                .then((data) => {
+                    let load = '<img src="loading.gif" alt="Loading..." id="user-loader" class="loader">'
+                    document.getElementById('user-list').innerHTML = load
+                    setTimeout(() => {
+                        let result = '<div>'
+                        data.forEach((user) => {
+                            result += `<div class="user-container"> 
+                                          <div class="user-box">
+                                             <div style="width: 300px;">
+                                                <p style="text-decoration: underline; color: blue;">${user.name}</p>
+                                                <a href="${user.website}" target="_blank" id="site">${user.website}</a><br>
+                                                <a href="mailto:${user.email}?subject=Hello!" id="email">${user.email}</a><br>
+                                                <a href="tel:${user.phone}" id="phone">${user.phone}</a>
+                                             </div>
+                                          </div>
+                                      </div>`
+                        }) 
+                        result += '</div>'
+                        document.getElementById('user-loader').classList.add('hide')
+                        document.getElementById('user-list').innerHTML = result
+                    }, limit + '00')
+                })
+                .catch((err) => { 
+                    let errorMsg = `<div style="margin-top: 50px;">
+                                      <h1>( ͡° ͜ʖ ͡°)</h1>
+                                      <h2>Oops something went wrong</h2>
+                                      <h3 style="color: orangered;">${err}</h3>
+                                   </div>`
+                    document.getElementById('user-list').innerHTML = errorMsg
+                })
+            })
+            /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Pokemons ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+            const POKEMON_LIST = document.getElementById('pokemon-list')
+            window.onload = () => {
+                fetch('https://pokeapi.co/api/v2/pokemon')
+                .then(res => res.json()).then((data) => {
+                    document.getElementById('number-of-pokemons').value = data.results.length
+                    console.log('Number of Pokemons: ' + data.results.length)
+                }).catch((err) => {
+                    document.getElementById('number-of-pokemons').value = 1
+                    console.error(err)
+                })
+             }                         
+             document.getElementById('get-pokemons').addEventListener('click', () => {
+                let pokemons = document.getElementById('number-of-pokemons').value
+                let result = '<div>'
+                    for(let x = 1; x <= pokemons; x++) {
+                        fetch(`https://pokeapi.co/api/v2/pokemon/${x}`)
+                        .then(res => res.json())
+                        .then((data) => {
+                            let load = '<img src="pokemon-loading.gif" alt="Loading..." id="pokemon-loader" class="loader">'
+                            document.getElementById('pokemon-list').innerHTML = load
+                                    result += `<div class="poke-container"> 
+                                                    <a href="https://www.pokemon.com/us/pokedex/${data.forms[0].name}" target="_blank">
+                                                        <div id="pokemon-${x}" class="poke-box">
+                                                            <div>
+                                                                <h3>${data.forms[0].name}</h3>
+                                                                <img src="${data.sprites.front_default}" alt="${data.species.name}" id="front-img-${x}">
+                                                                <img src="${data.sprites.back_default}" alt="${data.species.name}" id="back-img-${x}" class="hide">`
+                                                        /*   result += '<ul>'
+                                                         *   for(let y = 0; y < data.abilities.length; y++) {
+                                                         *      result += `<li>
+                                                         *                    ${data.abilities[y].ability.name}
+                                                         *                 </li>`     
+                                                         *   } 
+                                                         *   result += '</ul>'
+                                                         */
+                                                result += `</div>
+                                                        </div>
+                                                    </a>
+                                               </div>`
+                        })
+                        .catch((err) => { 
+                            let errorMsg = `<div style="margin-top: 50px;">
+                                              <h1>( ͡° ͜ʖ ͡°)</h1>
+                                              <h2>Oops something went wrong</h2>
+                                              <h3 style="color: orangered;">${err}</h3>
+                                           </div>`
+                            POKEMON_LIST.innerHTML = errorMsg
+                        })
+                    }
+                    setTimeout(() => {
+                        document.getElementById('pokemon-loader').classList.add('hide')
+                        POKEMON_LIST.innerHTML = result
+                    }, pokemons + '00')
+                result += '</div>'
+            })
+        </script>
+    </body>
+</html>
+
+<!-- TODO: Make pokemons turn on hover -->

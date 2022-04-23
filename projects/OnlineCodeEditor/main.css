@@ -1,0 +1,572 @@
+html, body {
+     padding: 0;
+        margin: 0;
+        background-color: #F8F8F8;
+     font-family: Helvetica, Arial, sans-serif; 
+     font-weight: 300;
+     overflow-x: hidden; /* Prevents from sliding to the right */
+  }
+  
+  #menuBar {
+        width: 100%;
+        height: 130px;
+        font-size: 25px;
+        background-color: #1D1E22;
+        position: relative;
+  }
+  
+  #logo {
+        color: whitesmoke;
+        padding: 30px 0 0 10px;
+        font-size: 200%;
+        margin-left: 20px;
+        float: left;
+  }
+  
+  #by {
+       color: #C9CBD6;
+       padding: 48px 0 0 10px;
+       margin-left: -305px;
+       margin-top: 40px;
+       font-size: 18px;
+       float: left;	
+  }
+  
+  #by a {
+       color: #C9CBD6;
+       text-decoration: none;
+  }
+  
+  #by a:hover {
+       color: red;
+       transition: color 1s;
+  }
+  
+  #runButton {
+       padding: 15px 210px 0 0;
+  }
+  
+  #run {
+       outline: 0;
+       background: #c9cbd6;
+       border-color: #c9cbd6;
+       float: right;
+       top: 25%;
+       right: 9%;
+       font-size: 150%;
+       position: absolute;
+       cursor: pointer;
+  }
+  
+  #run span {
+       font-weight: bold;
+  }
+  
+  /* UL */
+  #toggle {
+       margin: 0 auto;
+       list-style: none;
+       width: 349.5px;
+       height: 40px;
+       background-color: #c9cbd6;
+       padding: 0;
+       position: absolute;
+       top: 30%;
+       left: 41.2%;
+  }
+  
+  /* HTML / CSS / JAVASCRIPT selectors */
+  #toggle li { 
+        float: left;
+        border-right: 1px solid #1D1E22;
+        padding: 5.5px 12px;
+        font-weight: bold;
+        cursor: pointer;
+  }
+  
+  .selected {
+       background-color: #958a8aab;
+  }
+  
+  .clear {
+       clear: both;
+  }
+  
+  .codeContainer {
+        width: 25%; /* Space between HTML ~ CSS ~ JS ~ BROWSER */
+        height: 100%;
+        float: left;
+        position: relative;
+  }
+  
+  .codeContainer textarea {
+       width: 100%;
+       height: 100%;
+       border: none;
+       color: rgb(224, 224, 224);
+       font-size: 15px;
+       position: absolute;
+       background-color: #1D1E22; 
+       font-family: Verdana;
+       border-right: 10px solid #333637;
+       border-bottom: 10px solid #333637;
+       box-sizing: border-box;	/* Includes the border in the width & padding of the box */
+  }
+  
+  /* Removes the blue border when clicking on the textarea */
+  textarea:focus { 
+       outline: 0;
+  }
+  
+  /* The code label above the textarea */
+  .codeLabel {
+       background: #333637;
+       position: flex;
+  }
+  
+  img {
+       margin-top: 3px;
+       width: 70px;
+       height: 70px;
+  }
+  
+  /* Code output */
+  iframe {
+       left: 20px;
+       position: flex;
+       border: none;
+       height: 100%;
+       width: 1920px; /* Enabling the browser container to go full screen */
+  }
+  
+  #browser {
+       width: 1920px;
+       background-color: #333637;
+  }
+  
+  /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ RESPONSIVE LAYOUT ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  
+  
+  @media only screen and (min-width: 0px) and (max-width: 360px) { /* SMALL MOBILE PHONES 320 + */
+       #menuBar {
+            font-size: 10px;
+            height: 110px;
+      }
+  
+      #logo {
+            font-size: 220%;
+            margin-left: 55px;
+            margin-top: -15px;
+      }
+  
+      #by {
+            padding: 30px 0 0 10px;
+            margin-left: -145px;
+            margin-top: 13px;
+            font-size: 12px;
+       }
+  
+      #toggle {
+            width: 179px;
+            height: 24px;
+            top: 70%;
+            left: 10.5%;
+       }
+  
+       #toggle li { 
+            padding: 7px 11.1px;
+      }
+  
+       #run {
+            top: 70%;
+            right: 3%;
+            font-size: 140%;
+       }
+  
+       img {
+            width: 20px;
+            height: 20px;
+       }
+  
+       .codeContainer {
+            width: 33.3%;
+            height: 100%; 
+      }
+  
+      .codeContainer textarea {
+            width: 100%;
+            height: 100%;
+            font-size: 9px;
+       }
+  
+       iframe {
+            width: 360px; 
+       }
+       
+       #browser {
+            width: 360px;
+       }
+  } /* End of @media min-width 0px */
+  
+  
+  @media only screen and (min-width: 360px) and (max-width: 375px) { /* MOBILE PHONES 360 + */
+       #menuBar {
+            font-size: 11px;
+            height: 110px;
+      }
+  
+      #logo {
+            font-size: 220%;
+            margin-left: 70px;
+            margin-top: -15px;
+      }
+  
+      #by {
+            padding: 30px 0 0 10px;
+            margin-left: -160px;
+            margin-top: 13px;
+            font-size: 12px;
+       }
+  
+      #toggle {
+            width: 190px;
+            height: 24px;
+            top: 70%;
+            left: 10.5%;
+       }
+  
+       #toggle li { 
+            padding: 6px 11.1px;
+      }
+  
+       #run {
+            top: 70%;
+            right: 3%;
+            font-size: 140%;
+       }
+  
+       img {
+            width: 25px;
+            height: 25px;
+       }
+  
+       .codeContainer {
+            width: 33.3%;
+            height: 100%; 
+      }
+  
+      .codeContainer textarea {
+            width: 100%;
+            height: 100%;
+            font-size: 10px;
+       }
+  
+       iframe {
+            width: 375px; 
+       }
+       
+       #browser {
+            width: 375px;
+       }
+  } /* End of @media min-width 360px */
+  
+  
+  @media only screen and (min-width: 375px) and (max-width: 411px) { /* MOBILE PHONES 375 + */
+       #menuBar {
+            font-size: 11px;
+            height: 110px;
+      }
+  
+      #logo {
+            font-size: 220%;
+            margin-left: 69px;
+      }
+  
+      #by {
+            padding: 48px 0 0 10px;
+            margin-left: -157px;
+            margin-top: -5px;
+            font-size: 12px;
+       }
+  
+      #toggle {
+            width: 189.9px;
+            height: 24px;
+            top: 70%;
+            left: 10.5%;
+       }
+  
+       #toggle li { 
+            padding: 6px 11.1px;
+      }
+  
+       #run {
+            top: 70%;
+            right: 5%;
+       }
+  
+       img {
+            width: 30px;
+            height: 30px;
+       }
+  
+       .codeContainer {
+            width: 33.3%;
+            height: 100%; 
+      }
+  
+      .codeContainer textarea {
+            width: 100%;
+            height: 100%;
+            font-size: 10px;
+       }
+  
+       iframe {
+            width: 411px; 
+       }
+       
+       #browser {
+            width: 411px;
+       }
+  } /* End of @media min-width 375px */
+  
+  
+  @media only screen and (min-width: 411px) and (max-width: 768px) { /* MOBILE PHONES 411 + */
+       #menuBar {
+            font-size: 11px;
+            height: 110px;
+      }
+  
+      #logo {
+            font-size: 220%;
+            margin-left: 90px;
+            margin-top: -15px;
+      }
+  
+      #by {
+            padding: 48px 0 0 10px;
+            margin-left: -157px;
+            margin-top: -5px;
+            font-size: 12px;
+       }
+  
+      #toggle {
+            width: 189.8px;
+            height: 24px;
+            top: 70%;
+            left: 10.5%;
+       }
+  
+       #toggle li { 
+            padding: 6px 11.1px;
+      }
+  
+       #run {
+            top: 70%;
+            right: 5%;
+       }
+  
+       img {
+            width: 25px;
+            height: 25px;
+       }
+  
+       .codeContainer {
+            width: 33.3%;
+            height: 100%; 
+      }
+  
+      .codeContainer textarea {
+            width: 100%;
+            height: 100%;
+            font-size: 10px;
+       }
+  
+       iframe {
+            width: 768px; 
+       }
+       
+       #browser {
+            width: 768px;
+       }
+  } /* End of @media min-width 411px */
+  
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) { /* SMALL TABLETS 768 + */
+       #menuBar {
+            font-size: 17px;
+            height: 150px;
+      }
+  
+      #logo {
+            font-size: 220%;
+            margin-left: 210px;
+      }
+  
+      #by {
+            padding: 60px 0 0 10px;
+            margin-left: -245px;
+            margin-top: 10px;
+            font-size: 20px;
+       }
+  
+      #toggle {
+            width: 257.5px;
+            height: 30px;
+            top: 70%;
+            left: 24%;
+       }
+  
+       #toggle li { 
+            padding: 5px 11.3px;
+      }
+  
+       #run {
+            top: 70%;
+            right: 10%;
+       }
+  
+       img {
+            width: 50px;
+            height: 50px;
+       }
+  
+       .codeContainer {
+            width: 25%;
+            height: 100%; 
+      }
+  
+      .codeContainer textarea {
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+       }
+  
+       iframe {
+            width: 1024px; 
+       }
+       
+       #browser {
+            width: 1024px;
+       }
+  } /* End of @media min-width 768px */
+  
+  
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) { /* TABLETS 1024 + */
+       #menuBar {
+            font-size: 25px;
+            height: 250px;
+      }
+  
+      #logo {
+            font-size: 220%;
+            margin-left: 255px;
+      }
+  
+      #by {
+            padding: 80px 0 0 10px;
+            margin-left: -340px;
+            margin-top: 15px;
+            font-size: 25px;
+       }
+  
+      #toggle {
+            width: 349.5px;
+            height: 50px;
+            top: 70%;
+            left: 22%;
+       }
+  
+       #toggle li { 
+            padding: 11px 12px;
+      }
+  
+       #run {
+            top: 70%;
+            right: 8%;
+       }
+  
+       img {
+            width: 70px;
+            height: 70px;
+       }
+  
+       .codeContainer {
+            width: 20%;
+            height: 100%; 
+      }
+  
+      .codeContainer textarea {
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+       }
+  
+       iframe {
+            width: 1280px; 
+       }
+       
+       #browser {
+            width: 1280px;
+       }
+  } /* End of @media min-width 1024px */
+  
+  
+  @media only screen and (min-width: 1280px) and (max-width: 1440px) { /* SMALL LAPTOPS 1280 + */
+       #menuBar {
+            font-size: 24px;
+            height: 180px;
+      }
+  
+      #logo {
+            font-size: 220%;
+            margin-left: 10px;
+      }
+  
+      #by {
+            padding: 80px 0 0 10px;
+            margin-left: -340px;
+            margin-top: 5px;
+            font-size: 25px;
+       }
+  
+      #toggle {
+            width: 349.3px;
+            height: 50px;
+            top: 20%;
+            left: 45%;
+       }
+  
+       #toggle li { 
+            padding: 11px 13.8px;
+      }
+  
+       #run {
+            top: 20%;
+            right: 8%;
+       }
+  
+       img {
+            width: 70px;
+            height: 70px;
+       }
+  
+       .codeContainer {
+            width: 25%;
+            height: 100%; 
+      }
+  
+      .codeContainer textarea {
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+       }
+  
+       iframe {
+            width: 1440px; 
+       }
+       
+       #browser {
+            width: 1440px;
+       }
+  } /* End of @media min-width 1280px */

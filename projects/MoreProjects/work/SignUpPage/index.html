@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SIGN UP PAGE</title>
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery/jquery.3.1.1.min.js"></script>
+
+</head>
+
+	<body>
+
+		<div id="center">
+
+			<div id="triangle"></div>
+			<div id="error"></div>
+
+			<!-- form starts as neither valid or invalid -->
+
+			<form id="validate" class="" method="post"> 
+				
+											<!-- Email -->
+
+				<label for="email"><p id="enterEmail">Email Address</p></label>
+				<input name="email" id="email" size="30" placeholder="Enter your email address.." onfocus="this.placeholder=''" onblur="this.placeholder='Enter your email address..'" autocomplete="off" required>
+
+						<br>
+		
+											<!-- Phone -->
+
+				<label for="phone"><p id="movePhone">Phone Number</p></label>
+				<input type="text" name="phone" id="phone" placeholder="Enter your phone number.." size="25" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your phone number..'" autocomplete="off" required>
+
+											<!-- User name -->
+
+				<label for="username"><p id="user">Username</p></label>
+				<input name="username" id="username" placeholder="Enter your username.." onfocus="this.placeholder = ''" onblur="this.placeholder='Enter your username..'" autocomplete="off" required>
+
+									<!-- Password & Confirm password -->
+
+				<label for="password"><p><span id="movePassword">Password</span></p></label>
+				<input id="password" type="password" name="password" placeholder="Password.." onfocus="this.placeholder=''" onblur="this.placeholder='Password..'" required>
+
+				<label for="confirmPassword"><p><span id="movePassword">Confirm Password</span></p></label>
+				<input id="confirm_password" type="password" name="confirmPassword" placeholder="Confirm.." onfocus="this.placeholder=''" onblur="this.placeholder='Confirm..'" onkeyup="check();" required><span id="msg"></span>
+			
+					<br><br><br>
+
+											<!-- Submit -->
+
+				<div class="svg-wrapper">
+				    <svg height="39.5" width="140" xmlns="http://www.w3.org/2000/svg">
+				      <rect id="shape" height="40" width="140" />
+				      <div id="text">
+						<input type="submit" name="submit" value="SIGN UP" id="submit">
+					  </div>
+				    </svg>
+				</div>
+
+			</form>
+
+		</div>
+
+		<script type="text/javascript" src="script.js"></script>
+
+	</body>
+
+</html>
