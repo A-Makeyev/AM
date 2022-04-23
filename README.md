@@ -2,7 +2,7 @@
 
 ### Which includes:
 
-### >>> Spinning Solar System [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/spinning-solar-system/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/moreProjects/work/Spinning-Solar-System)
+### >>> Spinning Solar System [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/SpinningSolarSystem/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/moreProjects/work/SpinningSolarSystem)
 ### >>> Online Code Editor [Live](https://anatoly-makeyev.netlify.app/projects/onlinecodeeditor/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/onlineCodeEditor)
 ### >>> Shape Clicker [Live](https://anatoly-makeyev.netlify.app/projects/shapeclicker/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/shapeClicker)
 ### >>> About Me Page [Live](https://anatoly-makeyev.netlify.app/projects/aboutme/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/aboutMe)
