@@ -2,7 +2,7 @@
 
 @font-face {
      font-family: 'Amostely Signature';
-     src: url(/static/fonts/AmostelySignature.ttf);
+     src: url(../../work/PhotographerPortfolio/static/fonts/AmostelySignature.ttf);
 }
 
 *:focus { outline: none !important; }
