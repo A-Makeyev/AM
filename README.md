@@ -1,10 +1,21 @@
->>> ## [My cringy first portfolio website](https://anatoly-makeyev.netlify.app)
+>>> ## [My cringy first portfolio website](https://anatoly-makeyev.netlify.app/)
 
 ### Which includes:
 
-### >>> Spinning Solar System [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/SpinningSolarSystem/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/moreProjects/work/SpinningSolarSystem)
-### >>> Online Code Editor [Live](https://anatoly-makeyev.netlify.app/projects/onlinecodeeditor/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/onlineCodeEditor)
-### >>> Shape Clicker [Live](https://anatoly-makeyev.netlify.app/projects/shapeclicker/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/shapeClicker)
-### >>> About Me Page [Live](https://anatoly-makeyev.netlify.app/projects/aboutme/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/aboutMe)
-### >>> To Do List [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/todolist/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/moreProjects/work/ToDoList)
-### >>> Sign Up Page [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/signuppage/) | [Repo](https://github.com/a-makeyev/AM/tree/master/projects/moreProjects/work/SignUpPage)
+### >>> About Me Page [Live](https://anatoly-makeyev.netlify.app/projects/aboutme/) | [Repo](https://github.com/A-Makeyev/AM/tree/master/projects/AboutMe/)
+
+### >>> Online Code Editor [Live](https://anatoly-makeyev.netlify.app/projects/onlinecodeeditor/) | [Repo](https://github.com/A-Makeyev/AM/tree/master/projects/OnlineCodeEditor)
+
+### >>> Spinning Solar System [Live](https://anatoly-makeyev.netlify.app/projects/spinningsolarsystem/) | [Repo](https://github.com/A-Makeyev/AM/tree/master/projects/SpinningSolarSystem)
+
+### >>> Shape Clicker [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/shapeclicker/) | [Repo](https://github.com/A-Makeyev/AM/tree/master/projects/MoreProjects/work/ShapeClicker)
+
+### >>> Sign Up Page [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/signuppage/) | [Repo](https://github.com/A-Makeyev/AM/tree/master/projects/MoreProjects/work/SignUpPage)
+
+### >>> To Do List [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/todolist/) | [Repo](https://github.com/A-Makeyev/AM/tree/master/projects/MoreProjects/work/ToDoList)
+
+### >>> Photographer Portfolio [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/photographerportfolio/) | [Repo](https://github.com/A-Makeyev/AM/tree/master/projects/MoreProjects/work/PhotographerPortfolio)
+
+### >>> Personal Page [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/personalpage/) | [Repo](https://github.com/A-Makeyev/AM/tree/master/projects/MoreProjects/work/PersonalPage)
+
+### >>> Fetch Them [Live](https://anatoly-makeyev.netlify.app/projects/moreprojects/work/fetchthem/) | [Repo](https://github.com/A-Makeyev/AM/tree/master/projects/MoreProjects/work/FetchThem)
