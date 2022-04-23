@@ -5,7 +5,7 @@ An online code editor that lets the user type and execute HTML, CSS and JavaScri
 <br><br>
 >>> [See it in action](https://www.youtube.com/watch?v=4h_TKh89qQs&feature=youtu.be)
 <br><br>
->>> [Automated test repository](https://github.com/Makeyka/onlineCodeEditorExample)
+>>> [Automated test repository](https://github.com/a-makeyev/onlineCodeEditorExample)
 
 ## What I've learned by making it
 

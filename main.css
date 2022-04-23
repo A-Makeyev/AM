@@ -230,7 +230,7 @@ h1, h3, h5, p {
 }
 
 .project-2 h5 {
-    margin-left: 6px;
+    margin-left: -20px;
     width: 300px;
     outline: 0;
 }

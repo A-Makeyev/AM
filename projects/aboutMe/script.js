@@ -1,27 +1,27 @@
-$(document).ready(function() { 
+$(document).ready(function () {
 
 	// Change the title text when leaving the tab
-	$(function() {
+	$(function () {
 		// Get page title
-			var pageTitle = $("title").text();
+		var pageTitle = $("title").text();
 
 		// Change page title on blur
-		$(window).blur(function() {
+		$(window).blur(function () {
 			$("title").text("About Me");
 		});
 
 		// Change page title back on focus
-		$(window).focus(function() {
+		$(window).focus(function () {
 			$("title").text(pageTitle);
 		});
 	});
 
-	
-// 	document.getElementById("main-pic").onclick=function() {
-// 		setTimeout(function() {
-// 			window.open("https://makeyka.github.io/AM/");
-// 		}, 1000);
-// 	}
+
+	// 	document.getElementById("main-pic").onclick=function() {
+	// 		setTimeout(function() {
+	// 			window.open("https://a-makeyev.github.io/AM/");
+	// 		}, 1000);
+	// 	}
 
 
 });
