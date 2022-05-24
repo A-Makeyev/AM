@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            border-bottom: 1px solid grey;
+            padding: 10px;
+        }
+        #loader {
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 300px;
+            display: none;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+        #display-data, #clear-data {
+            width: 100px;
+            height: 25px;
+            cursor: pointer;
+        }
+        #target {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .user {
+            margin: 10px;
+            width: 400px;
+            height: 250px;
+            padding: 10px;
+            border: 1px solid; 
+            border-radius: 5px;
+        }
+        .user p, .user h2 {
+            padding: 10px;
+        }
+        .user img {
+            padding: 10px;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+    <body>
+        <div class="container">
+            <div class="search-box">
+                <button id="display-data">Display Users</button>
+                <button id="clear-data">Clear Users</button>
+                <span id="error-message" style="color: red;"></span>
+            </div>
+        </div>
+        <div id="target"></div>
+        <img src="spinners.gif" alt="loading" id="loader">
+        
+        <script>
+            const url = 'https://dummyapi.io/data/v1/user'
+            const loader = document.getElementById('loader')
+            const target = document.getElementById('target')
+            const errorMessage = document.getElementById('error-message')
+            const displayDataButton = document.getElementById('display-data')
+            const clearDataButton = document.getElementById('clear-data')
+            const userData = document.querySelector('.user-data')
+            const user = document.querySelector('.user')
+
+            function parse(data) {
+                return JSON.parse(JSON.stringify(data))
+            }
+
+            async function displayData() {    
+                loader.style.display = 'block'
+
+                await fetch(url, {
+                    method: 'GET', 
+                    headers: {
+                    "Content-Type": "application/json",
+                    "app-id": "61adf55739cac21b6b4b1218"
+                    }
+                })
+                .then(res => res.json())
+                .then((json) => {
+                    if (Object.keys(json).length !== 0) {
+                    console.log(json)
+
+                    clearDataButton.style.pointerEvents = 'all'
+                    displayDataButton.style.pointerEvents = 'none'
+                    
+                    json.data.forEach(user => {
+                        loader.style.display = 'none'
+                        target.innerHTML += 
+                        `
+                            <div class="user">
+                                <div class="user-data">
+                                    <h2 style="border-bottom: 1px solid;">${parse(user.firstName)} ${parse(user.lastName)}</h2>
+                                    <p><b>ID:</b> ${parse(user.id)}</p>
+                                    <img src="${parse(user.picture)}" alt="${parse(user.firstName)}">
+                                </div>
+                            </div>
+                        `
+                    })
+
+                    } else {
+                        errorMessage.style.color = 'red'
+                        errorMessage.textContent = 'User does not exist'
+                        errorMessage.style.display = 'inline-block'
+                    }
+                })
+                .catch(error => {
+                    alert(error)
+                })
+            }
+
+            function clearData() {
+                target.innerHTML = ''
+                displayDataButton.style.pointerEvents = 'all'
+                clearDataButton.style.pointerEvents = 'none'
+            }
+
+            displayDataButton.addEventListener('click', displayData)
+            clearDataButton.addEventListener('click', clearData)
+
+        </script>
+    </body>
+</html>
