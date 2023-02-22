@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Form</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html" class="nav-link">home</a></li>
+            <li><a href="./about.html" class="nav-link">about</a></li>
+            <li><a href="./contact.html" class="nav-link">contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="form-container">
+            <h1>Contact</h1>
+            <form class="contact-form" onsubmit="return false">
+                <input type="text" placeholder="First Name" id="firstName">
+                <input type="text" placeholder="Last Name" id="lastName">
+                <input type="email" placeholder="Email" id="email">
+                <input type="text" placeholder="Phone" id="phone">
+                <input type="text" placeholder="Comment" id="comment">
+                <button type="submit" id="submit" disabled>Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <h3></h3>
+    </footer>
+    <script src="./js/portfolio.js"></script>
+</body>
+</html>
